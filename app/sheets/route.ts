@@ -14,7 +14,6 @@ export async function GET(req: Request) {
   const serviceAccountAuth = jwtClient();
   try {
     const doc = await loadSheet(serviceAccountAuth);
-    console.log("load info", doc.sheetsByIndex);
     const { sheetCount, spreadsheetId, sheetsByTitle } = doc;
     return Response.json({
       sheetCount,
