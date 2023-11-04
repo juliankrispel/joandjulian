@@ -1,0 +1,52 @@
+// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import type { NextApiRequest, NextApiResponse } from "next";
+import { JWT } from "google-auth-library";
+import keyjson from "../../../joandjulian-0761ab687054.json";
+import { jwtClient } from "../../lib/jwtClient";
+import { loadSheet } from "../../lib/loadSheet";
+import { notFound, redirect } from "next/navigation";
+import { getSheetRow } from "../../lib/getSheetRow";
+import { NextRequest } from "next/server";
+
+export const sheetTitle = "Invites";
+export enum Constants {
+  HASH = "HASH",
+}
+
+export async function GET(
+  req: Request,
+  { params: { token } }: { params: { token: string } }
+) {
+  try {
+    const row = await getSheetRow(token)
+    if (!row) {
+      throw new Error('Could not find row')
+    }
+    return Response.json(row.toObject());
+  } catch (err: any) {
+    console.error(err.message);
+  }
+
+  return Response.json(null);
+}
+
+export async function POST(
+  req: NextRequest,
+  { params: { token } }: { params: { token: string } }
+) {
+  try {
+    const body: { answer: string; message: string } = await req.json();
+    const row = await getSheetRow(token);
+    if (!row) {
+      throw new Error("Could not find row");
+    }
+    row.set("ANSWER", body.answer);
+    row.set("MESSAGE", body.message);
+    await row.save();
+    return Response.json(body);
+  } catch (err: any) {
+    console.error(err.message);
+  }
+
+  return Response.json(null);
+}
