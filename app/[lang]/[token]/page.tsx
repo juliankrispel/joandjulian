@@ -5,6 +5,7 @@ import { seedHashes } from '../../lib/actions';
 import { Item, lang } from '../../lib/lang';
 import { notFound, redirect } from 'next/navigation'
 import { Row } from '../../lib/types';
+import { InviteForm } from '../../lib/InviteForm';
 
 // const af = Abril_Fatface({ weight: "400", subsets: ["latin"] });
 // const gv = Great_Vibes({ weight: "400", subsets: ["latin"] });
@@ -21,16 +22,27 @@ export default async function Home({
     return notFound();
   }
 
+  if (["no", "yes"].includes(json.ANSWER)) {
+    return redirect(`/${params.lang}/${params.token}/info`);
+  }
+
   const rsvp = async (formData: FormData) => {
     "use server";
     const answer = formData.get("answer");
     const message = formData.get("message");
-    const res = await fetch(`${process.env.BASE_URL}/api/${params.token}`, {
+    const plusOne = formData.get("plusOne");
+    const allergies = formData.get("allergies");
+    const dietaryRequirements = formData.get("dietaryRequirements");
+    await fetch(`${process.env.BASE_URL}/api/${params.token}`, {
       method: "POST",
-      body: JSON.stringify({ answer, message }),
+      body: JSON.stringify({
+        answer,
+        message,
+        plusOne,
+        dietaryRequirements,
+        allergies,
+      }),
     });
-    const resJson = await res.json();
-    console.log(resJson);
   };
 
   const isSingle = json.NAMES.split(",").length === 1;
@@ -45,7 +57,7 @@ export default async function Home({
 
   return (
     <>
-      <form className={`w-full text-center p-8 text-5xl`} action={rsvp}>
+      <form className={`w-full p-8`} action={rsvp}>
         <h1 className={`text-6xl`}>
           {lang("dear", params.lang)} {namesText}
         </h1>
@@ -55,30 +67,11 @@ export default async function Home({
         </p>
         <p>{lang("timeAndLocation", params.lang)}</p>
         <p>{lang("rsvp", params.lang)}</p>
-        <fieldset>
-          <legend>{lang("answer", params.lang)}</legend>
-
-          <div>
-            <input
-              type="radio"
-              id="yes"
-              name="answer"
-              value="yes"
-              defaultChecked
-            />
-            <label htmlFor="yes">{lang("yes", params.lang)}</label>
-          </div>
-
-          <div>
-            <input type="radio" id="no" name="answer" value="no" />
-            <label htmlFor="no">{lang("no", params.lang)}</label>
-          </div>
-        </fieldset>
-        <textarea
-          name="message"
-          placeholder={lang("nachricht", params.lang)}
-        ></textarea>
-        <button>{lang("submitAnswer", params.lang)}</button>
+        <InviteForm
+          row={json}
+          lang={params.lang}
+          allowPlusOne={names.length === 1}
+        />
       </form>
     </>
   );

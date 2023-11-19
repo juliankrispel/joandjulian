@@ -35,13 +35,23 @@ export async function POST(
   { params: { token } }: { params: { token: string } }
 ) {
   try {
-    const body: { answer: string; message: string } = await req.json();
+
+    const body: {
+      answer: string;
+      message: string;
+      allergies: string;
+      dietaryRequirements: string;
+      plusOne: string;
+    } = await req.json();
     const row = await getSheetRow(token);
     if (!row) {
       throw new Error("Could not find row");
     }
     row.set("ANSWER", body.answer);
     row.set("MESSAGE", body.message);
+    row.set("PLUS_ONE", body.plusOne);
+    row.set("DIETARY_REQUIREMENTS", body.dietaryRequirements);
+    row.set("ALLERGIES", body.allergies);
     await row.save();
     return Response.json(body);
   } catch (err: any) {

@@ -4,4 +4,6 @@ export interface Row {
   DIETARY_REQUIREMENTS: string;
   ALLERGIES: string;
   HASH: string;
+  ANSWER: string;
+  MESSAGE: string;
 }

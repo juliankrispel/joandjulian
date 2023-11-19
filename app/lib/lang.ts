@@ -53,6 +53,33 @@ const dict = {
     "de-AT": "Antwort senden",
     "en-GB": "Submit Answer",
   },
+  notFoundHeader: {
+    "de-AT": "Zugang nur für geladene Gäste",
+    "en-GB": "Access only for invited guests",
+  },
+  notFoundText: {
+    "de-AT":
+      "Falls du eine Einladung erhalten hast, benutze bitte den originalen Link oder meld dich bei uns.",
+    "en-GB":
+      "If you have received an invitation, please use the original link or contact us.",
+  },
+  plusOne: {
+    "de-AT":
+      "Falls du eine Begleitung mitbringen möchtest, gib bitte hier den Namen ein.",
+    "en-GB":
+      "If you would like to bring a plus one, please enter their name here.",
+  },
+  dietaryRequirements: {
+    "de-AT":
+      "Falls du gewisse Ernährungsbedürfnisse hast, gib diese bitte hier ein.",
+    "en-GB": "If you have any dietary requirements, please enter them here.",
+  },
+  allergies: {
+    "de-AT":
+      "Falls du Allergien hast, gib diese bitte hier ein. Wir werden unser Bestes tun, um diese zu berücksichtigen.",
+    "en-GB":
+      "If you have any allergies, please enter them here. We will do our best to accommodate.",
+  },
 } as const;
 
 export const lang = (key: keyof typeof dict, locale: keyof Item) => {
