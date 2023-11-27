@@ -8,42 +8,45 @@ export function InviteForm(props: {
   allowPlusOne?: boolean;
   row: Row;
 }) {
-  const [show, setShow] = useState(props.row.ANSWER === "yes");
+  const [answer, setAnswer] = useState(props.row.ANSWER === "yes");
   console.log({ props });
   return (
     <fieldset>
       <legend>{lang("answer", props.lang)}</legend>
 
-      <div id="radioyes">
-        <input
-          type="radio"
-          id="yes"
-          name="answer"
-          value="yes"
-          defaultChecked={props.row.ANSWER === "yes"}
-          onChange={() => {
-            setShow(true);
-          }}
-        />
-        <label htmlFor="yes">{lang("yes", props.lang)}</label>
+      <div className="flex space-x-8 py-8 text-5xl">
+        <label className={"cursor-pointer " + (answer ? "underline" : "")}>
+          <input
+            type="radio"
+            name="answer"
+            className={`hidden ${answer ? "checked" : ""}`}
+            value="yes"
+            defaultChecked={props.row.ANSWER === "yes"}
+            onChange={() => {
+              setAnswer(true);
+            }}
+          />
+          {lang("yes", props.lang)}
+        </label>
+
+        <label className={"cursor-pointer " + (!answer ? "underline" : "")}>
+          <input
+            type="radio"
+            id="no"
+            className="hidden"
+            name="answer"
+            value="no"
+            defaultChecked={props.row.PLUS_ONE === "no"}
+            onChange={() => {
+              setAnswer(false);
+            }}
+          />
+          {lang("no", props.lang)}
+        </label>
       </div>
 
-      <div>
-        <input
-          type="radio"
-          id="no"
-          name="answer"
-          value="no"
-          defaultChecked={props.row.PLUS_ONE === "no"}
-          onChange={() => {
-            setShow(false);
-          }}
-        />
-        <label htmlFor="no">{lang("no", props.lang)}</label>
-      </div>
-
-      {show && (
-        <div>
+      {answer && (
+        <div className="space-y-4">
           <div>
             <label>{lang("dietaryRequirements", props.lang)}</label>
             <textarea
@@ -51,9 +54,13 @@ export function InviteForm(props: {
               defaultValue={props.row.DIETARY_REQUIREMENTS}
             />
           </div>
-          <div>
+          <div className=" flex flex-col">
             <label>{lang("allergies", props.lang)}</label>
-            <textarea name="allergies" defaultValue={props.row.ALLERGIES} />
+            <textarea
+              className="block"
+              name="allergies"
+              defaultValue={props.row.ALLERGIES}
+            />
           </div>
           {props.allowPlusOne && (
             <div>

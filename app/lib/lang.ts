@@ -14,7 +14,7 @@ const dict = {
     "en-GB": "Dear",
   },
   invitePlural: {
-    "de-AT": "Wir würden uns freuen, dich zu unserer Hochzeit einzuladen",
+    "de-AT": "Wir würden uns freuen, euch bei unserer Hochzeit dabei zu haben.",
     "en-GB": "We would love to invite you to our wedding on the",
   },
   inviteSingular: {
@@ -22,8 +22,8 @@ const dict = {
     "en-GB": "We would love to invite you to our wedding on the",
   },
   date: {
-    "de-AT": "15. August 2024",
-    "en-GB": "15th of August 2024",
+    "de-AT": "Am 15ten August 2024",
+    "en-GB": "On the 15th of August 2024",
   },
   timeAndLocation: {
     "de-AT": "um 14 Uhr, Ashton Memorial, Williamson Road, Lancaster LA1 3QA.",
@@ -38,12 +38,12 @@ const dict = {
     "en-GB": "Answer",
   },
   yes: {
-    "de-AT": "Ja",
-    "en-GB": "Yes",
+    "de-AT": "Ja natürlich!",
+    "en-GB": "Yes!",
   },
   no: {
-    "de-AT": "Nein",
-    "en-GB": "No",
+    "de-AT": "Leider nein",
+    "en-GB": "Unfortunately not",
   },
   nachricht: {
     "de-AT": "Nachricht",
@@ -79,6 +79,59 @@ const dict = {
       "Falls du Allergien hast, gib diese bitte hier ein. Wir werden unser Bestes tun, um diese zu berücksichtigen.",
     "en-GB":
       "If you have any allergies, please enter them here. We will do our best to accommodate.",
+  },
+  hello: {
+    "de-AT": "Hallo",
+    "en-GB": "Hello",
+  },
+  acceptedSingle: {
+    "de-AT": "Du hast unsere Einladung angenommen.",
+    "en-GB": "You have accepted our invitation.",
+  },
+  infoSingle: {
+    "de-AT":
+      "Wir freuen uns, dich bei unserer Hochzeit dabei zu haben. Wir werden dich in den nächsten Monaten auf dem Laufenden halten.",
+    "en-GB":
+      "We are happy to have you at our wedding. We will keep you posted in the coming months.",
+  },
+
+  acceptedPlural: {
+    "de-AT": "Ihr habt unsere Einladung angenommen.",
+    "en-GB": "You have accepted our invitation.",
+  },
+  infoPlural: {
+    "de-AT":
+      "Wir freuen uns, euch bei unserer Hochzeit dabei zu haben. Wir werden euch in den nächsten Monaten auf dem Laufenden halten.",
+    "en-GB":
+      "We are happy to have you at our wedding. We will keep you posted in the coming months.",
+  },
+  yourAnswersSingle: {
+    "de-AT":
+      "Hier sind die Antworten, die du uns geschickt hast. Falls du etwas ändern möchtest, bitte hier klicken.",
+    "en-GB":
+      "Here are the answers you have sent us. If you would like to change anything, please click here.",
+  },
+  yourAnswersPlural: {
+    "de-AT":
+      "Hier sind die Antworten, die ihr uns geschickt habt. Falls ihr etwas ändern möchtet, bitte hier klicken.",
+    "en-GB":
+      "Here are the answers you have sent us. If you would like to change anything, please click here.",
+  },
+  yourAllergies: {
+    "de-AT": "Allergien",
+    "en-GB": "allergies",
+  },
+  yourDietaryRequirements: {
+    "de-AT": "Ernährungsbedürfnisse",
+    "en-GB": "Dietary requirements",
+  },
+  yourPlusOne: {
+    "de-AT": "Begleitung",
+    "en-GB": "Plus one",
+  },
+  edit: {
+    "de-AT": "ändern",
+    "en-GB": "edit",
   },
 } as const;
 

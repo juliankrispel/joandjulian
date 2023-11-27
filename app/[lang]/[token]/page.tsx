@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Abril_Fatface, Great_Vibes } from "next/font/google";
 import { seedHashes } from '../../lib/actions';
 import { Item, lang } from '../../lib/lang';
 import { notFound, redirect } from 'next/navigation'
@@ -12,8 +11,10 @@ import { InviteForm } from '../../lib/InviteForm';
 
 export default async function Home({
   params,
+  searchParams,
 }: {
   params: { lang: keyof Item; token: string };
+  searchParams: { edit: string };
 }) {
   const info = await fetch(`${process.env.BASE_URL}/api/${params.token}`);
   const json: null | Row = await info.json();
@@ -22,7 +23,10 @@ export default async function Home({
     return notFound();
   }
 
-  if (["no", "yes"].includes(json.ANSWER)) {
+  if (
+    !(searchParams?.edit && searchParams.edit === "true") &&
+    ["no", "yes"].includes(json.ANSWER)
+  ) {
     return redirect(`/${params.lang}/${params.token}/info`);
   }
 
@@ -46,10 +50,15 @@ export default async function Home({
   };
 
   const isSingle = json.NAMES.split(",").length === 1;
-  const names = json.NAMES.split(',')
-  const lastName = names.pop()
-  const namesText =
-    names.join(", ") + ` ${lang("and", params.lang)} ` + lastName;
+  const names = json.NAMES.split(",");
+  const lastName = names.pop();
+  const namesText = (
+    <>
+      {names.join(", ")}
+      <br />
+      <span className='pl-20'>{lang("and", params.lang)} {lastName}</span>
+    </>
+  );
 
   const inviteText = isSingle
     ? lang("inviteSingular", params.lang)
@@ -61,17 +70,20 @@ export default async function Home({
         <h1 className={`text-6xl`}>
           {lang("dear", params.lang)} {namesText}
         </h1>
-        <p>{inviteText}</p>
-        <p>
-          <strong>{lang("date", params.lang)}</strong>
-        </p>
-        <p>{lang("timeAndLocation", params.lang)}</p>
-        <p>{lang("rsvp", params.lang)}</p>
-        <InviteForm
-          row={json}
-          lang={params.lang}
-          allowPlusOne={names.length === 1}
-        />
+
+        <div className='pl-20 pt-10 max-w-3xl block space-y-6'>
+          <p>{inviteText}</p>
+          <p>
+            <strong>{lang("date", params.lang)}</strong>
+          </p>
+          <p>{lang("timeAndLocation", params.lang)}</p>
+          <p>{lang("rsvp", params.lang)}</p>
+          <InviteForm
+            row={json}
+            lang={params.lang}
+            allowPlusOne={names.length === 1}
+          />
+        </div>
       </form>
     </>
   );
