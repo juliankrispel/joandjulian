@@ -1,13 +1,10 @@
-import Head from 'next/head'
 import Image from 'next/image'
-import { seedHashes } from '../../lib/actions';
-import { Item, lang } from '../../lib/lang';
-import { notFound, redirect } from 'next/navigation'
+import { Item, lang } from "../../lib/lang";
+import { notFound, redirect } from "next/navigation";
 import { Row } from '../../lib/types';
 import { InviteForm } from '../../lib/InviteForm';
-
-// const af = Abril_Fatface({ weight: "400", subsets: ["latin"] });
-// const gv = Great_Vibes({ weight: "400", subsets: ["latin"] });
+import { revalidateTag } from 'next/cache';
+import { Greeting } from './Greeting';
 
 export default async function Home({
   params,
@@ -16,7 +13,9 @@ export default async function Home({
   params: { lang: keyof Item; token: string };
   searchParams: { edit: string };
 }) {
-  const info = await fetch(`${process.env.BASE_URL}/api/${params.token}`);
+  const info = await fetch(`${process.env.BASE_URL}/api/${params.token}`, {
+    next: { tags: ["token"] },
+  });
   const json: null | Row = await info.json();
 
   if (!json) {
@@ -32,6 +31,7 @@ export default async function Home({
 
   const rsvp = async (formData: FormData) => {
     "use server";
+    console.log("rsvp");
     const answer = formData.get("answer");
     const message = formData.get("message");
     const plusOne = formData.get("plusOne");
@@ -47,18 +47,10 @@ export default async function Home({
         allergies,
       }),
     });
+    await revalidateTag("token");
   };
 
   const isSingle = json.NAMES.split(",").length === 1;
-  const names = json.NAMES.split(",");
-  const lastName = names.pop();
-  const namesText = (
-    <>
-      {names.join(", ")}
-      <br />
-      <span className='pl-20'>{lang("and", params.lang)} {lastName}</span>
-    </>
-  );
 
   const inviteText = isSingle
     ? lang("inviteSingular", params.lang)
@@ -66,23 +58,29 @@ export default async function Home({
 
   return (
     <>
-      <form className={`w-full p-8`} action={rsvp}>
-        <h1 className={`text-6xl`}>
-          {lang("dear", params.lang)} {namesText}
+      <form className={`w-full`} action={rsvp}>
+        <h1 className={`text-6xl w-full block leading-tight`}>
+          <Greeting lang={params.lang} names={json.NAMES.split(",")} />
         </h1>
 
-        <div className='pl-20 pt-10 max-w-3xl block space-y-6'>
+        <div className="pt-10 block space-y-2">
           <p>{inviteText}</p>
-          <p>
-            <strong>{lang("date", params.lang)}</strong>
+          <p className="text-3xl leading-relaxed">
+            <strong>{lang("date", params.lang)}</strong>{" "}
+            {lang("timeAndLocation", params.lang)}
           </p>
-          <p>{lang("timeAndLocation", params.lang)}</p>
-          <p>{lang("rsvp", params.lang)}</p>
-          <InviteForm
-            row={json}
-            lang={params.lang}
-            allowPlusOne={names.length === 1}
-          />
+          <p>{lang("withReception", params.lang)}</p>
+          <p className="pb-6">{lang("rsvp", params.lang)}</p>
+
+          <InviteForm row={json} lang={params.lang} />
+          <div className="w-full align-center justify-center items-center flex py-12 ">
+            <Image
+              src="/landscape1.png"
+              alt="Ashton Memorial"
+              width={350}
+              height={50}
+            />
+          </div>
         </div>
       </form>
     </>
