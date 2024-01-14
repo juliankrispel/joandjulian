@@ -58,9 +58,7 @@ export default async function Info({
             height={50}
           />
         </div>
-        <p>
-          {lang("coachesWillLeaveAt", params.lang)}
-        </p>
+        <p>{lang("coachesWillLeaveAt", params.lang)}</p>
         <p>{lang("ceremonyWillBegin", params.lang)}</p>
         <p>{lang("theCoachWillCollect", params.lang)}</p>
         <p>{lang("foodWillBeServed", params.lang)}</p>
@@ -196,16 +194,6 @@ export default async function Info({
               {lang("edit", params.lang)}
             </a>
           </p>
-          <ul className="space-y-2">
-            <li>{lang("inviteAccepted", params.lang)}</li>
-            <li>
-              {lang("yourDietaryRequirements", params.lang)}:{" "}
-              {json.DIETARY_REQUIREMENTS || "n/a"}
-            </li>
-            <li>
-              {lang("yourAllergies", params.lang)}: {json.ALLERGIES || "n/a"}
-            </li>
-          </ul>
         </div>
       </div>
     </div>

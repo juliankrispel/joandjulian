@@ -73,8 +73,10 @@ const dict = {
     "en-GB": "15th of August 2024",
   },
   timeAndLocation: {
-    "de-AT": "um 14 Uhr, Ashton Memorial, Williamson Park, Quernmore Road, Lancaster.",
-    "en-GB": "at 2pm, Ashton Memorial, Williamson Park, Quernmore Road, Lancaster.",
+    "de-AT":
+      "um 14 Uhr, Ashton Memorial, Williamson Park, Quernmore Road, Lancaster.",
+    "en-GB":
+      "at 2pm, Ashton Memorial, Williamson Park, Quernmore Road, Lancaster.",
   },
   noPlusOne: {
     "de-AT":
@@ -261,8 +263,7 @@ const dict = {
     "en-GB": "If you have any dietary requirements, please enter them here.",
   },
   allergies: {
-    "de-AT":
-      "Falls du Allergien hast, gib diese bitte hier ein.",
+    "de-AT": "Falls du Allergien hast, gib diese bitte hier ein.",
     "en-GB": "If you have any allergies, please enter them here.",
   },
   hello: {
@@ -291,15 +292,15 @@ const dict = {
   },
   yourAnswersSingle: {
     "de-AT":
-      "Hier sind die Antworten, die du uns geschickt hast. Falls du etwas ändern möchtest, bitte hier klicken:",
+      "Falls du etwas an deiner Antwort ändern möchest, bitte hier klicken:",
     "en-GB":
-      "Here are the answers you have sent us. If you would like to change anything, please click here:",
+      "If you would like to change anything about your answer, please click here:",
   },
   yourAnswersPlural: {
     "de-AT":
-      "Hier sind die Antworten, die ihr uns geschickt habt. Falls ihr etwas ändern möchtet, bitte hier klicken:",
+      "Falls ihr etwas an eurer Antwort ändern möchtet, bitte hier klicken:",
     "en-GB":
-      "Here are the answers you have sent us. If you would like to change anything, please click here:",
+      "If you would like to change anything about your answer, please click here:",
   },
   yourAllergies: {
     "de-AT": "Allergien",
