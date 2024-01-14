@@ -60,8 +60,6 @@ export default async function Info({
         </div>
         <p>
           {lang("coachesWillLeaveAt", params.lang)}
-          <br />
-          {lang("arrivingAtAshtonMemorial", params.lang)}
         </p>
         <p>{lang("ceremonyWillBegin", params.lang)}</p>
         <p>{lang("theCoachWillCollect", params.lang)}</p>

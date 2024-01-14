@@ -1,11 +1,14 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import { getSheetRow } from "../../lib/getSheetRow";
 import { NextRequest } from "next/server";
+    import { revalidateTag } from 'next/cache';
 
 export const sheetTitle = "Invites";
 export enum Constants {
   HASH = "HASH",
 }
+
+// export const runtime = 'edge'
 
 export async function GET(
   req: Request,
@@ -24,12 +27,11 @@ export async function GET(
   return Response.json(null);
 }
 
-export async function POST(
+const update = async (
   req: NextRequest,
   { params: { token } }: { params: { token: string } }
-) {
+) => {
   try {
-
     const body: {
       answer: string;
       message: string;
@@ -46,11 +48,19 @@ export async function POST(
     row.set("PLUS_ONE", body.plusOne);
     row.set("DIETARY_REQUIREMENTS", body.dietaryRequirements);
     row.set("ALLERGIES", body.allergies);
+    revalidateTag("token");
     await row.save();
     return Response.json(body);
   } catch (err: any) {
     console.error(err.message);
   }
+};
+
+export async function POST(
+  req: NextRequest,
+  { params: { token } }: { params: { token: string } }
+) {
+  update(req, { params: { token } });
 
   return Response.json(null);
 }

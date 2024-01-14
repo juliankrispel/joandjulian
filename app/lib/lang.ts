@@ -64,17 +64,17 @@ const dict = {
   },
   thatsAShame: {
     "de-AT":
-      "Schade, dass du nicht dabei sein kannst. Natürlich verstehen wir das nicht jeder Zeit haben kann. Falls du uns eine Nachricht hinterlassen möchtest würden wir uns freuen.",
+      "Schade! Natürlich verstehen wir das nicht jeder Zeit haben kann. Falls du uns eine Nachricht hinterlassen möchtest würden wir uns freuen.",
     "en-GB":
-      "That's a shame you can't make it. Of course we understand that not everyone can make it. If you would like to leave us a message we would love to hear from you.",
+      "That's a shame. Of course we understand that not everyone can make it. If you would like to leave us a message we would love to hear from you.",
   },
   date: {
     "de-AT": "15ten August 2024",
     "en-GB": "15th of August 2024",
   },
   timeAndLocation: {
-    "de-AT": "um 14 Uhr, Ashton Memorial, Williamson Road, Lancaster.",
-    "en-GB": "at 2pm, Ashton Memorial, Williamson Road, Lancaster.",
+    "de-AT": "um 14 Uhr, Ashton Memorial, Williamson Park, Quernmore Road, Lancaster.",
+    "en-GB": "at 2pm, Ashton Memorial, Williamson Park, Quernmore Road, Lancaster.",
   },
   noPlusOne: {
     "de-AT":
@@ -88,8 +88,8 @@ const dict = {
     "en-GB": "With a reception to follow from 4:30pm at Arkholme Village Hall",
   },
   rsvp: {
-    "de-AT": "Bitte bestätige deine Teilnahme bis zum 20. Februar 2024.",
-    "en-GB": "Please RSVP by the 20th of Febuary 2024.",
+    "de-AT": "Bitte bestätige deine Teilnahme bis zum ersten März 2024.",
+    "en-GB": "Please RSVP by the 1st of March 2024.",
   },
   gettingHere: {
     "de-AT": "Anreise",
@@ -177,9 +177,9 @@ const dict = {
   },
   taxiToAndFrom: {
     "en-GB":
-      "If you would like to arrange a taxi to get you to and/or from Arkholme Village Hall, here are some local taxi services. However there are more in the area if you would like to find one closer to wherever you'll be staying.",
+      "If you would like to arrange a taxi to get you to and/or from Arkholme Village Hall, here are some local taxi services. However there are more in the area if you would like to find one closer to where you'll be staying.",
     "de-AT":
-      "Falls du ein Taxi zum Empfangsort Arkholme Village Hall organisieren möchtest, hier sind ein paar lokale Taxiunternehmen. Es gibt jedoch auch andere Taxifirmen in der Umgebung, falls du eines näher zu deiner Unterkunft finden möchtest.",
+      "Hier sind ein paar lokale Taxiunternehmen falls ihr ein Taxi zu Arkholme Village Hall nehmen möchtet.",
   },
   forThoseWithCaravans: {
     "de-AT": "Für jenige mit Wohnwägen",
@@ -209,9 +209,9 @@ const dict = {
   },
   coachesWillLeaveAt: {
     "de-AT":
-      "Die Busse werden um 12:45 Uhr von der Arkholme Village Hall abfahren, um die Gäste zur Zeremonie am Ashton Memorial, Lancaster LA1 3QA zu bringen.",
+      "Die Busse werden um 12:45 Uhr von der Arkholme Village Hall abfahren, um die Gäste zur Zeremonie am Ashton Memorial, Williamson Park, Quernmore Road, Lancaster LA1 1UX zu bringen.",
     "en-GB":
-      "Coaches will be leaving from Arkholme Village Hall at 12:45pm to take guests to the ceremony venue at Ashton Memorial, Lancaster LA1 3QA",
+      "Coaches will be leaving from Arkholme Village Hall at 12:45pm to take guests to the ceremony venue at Ashton Memorial, Williamson Park, Quernmore Road, Lancaster LA1 1UX.",
   },
   at12Pm: {
     "de-AT": "um 12:30, am Donnerstag den 15ten August",
@@ -262,9 +262,8 @@ const dict = {
   },
   allergies: {
     "de-AT":
-      "Falls du Allergien hast, gib diese bitte hier ein. Wir werden unser Bestes tun, um diese zu berücksichtigen.",
-    "en-GB":
-      "If you have any allergies, please enter them here. We will do our best to accommodate.",
+      "Falls du Allergien hast, gib diese bitte hier ein.",
+    "en-GB": "If you have any allergies, please enter them here.",
   },
   hello: {
     "de-AT": "Hallo",
