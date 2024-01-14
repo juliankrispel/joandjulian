@@ -5,6 +5,7 @@ export function isMale(name: string) {
   if (name === "Agnes") return false;
   if (name === "Astrid") return false;
   if (name === "Elisabeth") return false;
+  if (name === "Gwen") return false;
   if (name === "George") return false;
   if (name === "Sarah") return false;
   if (name === "Eleanor") return false;

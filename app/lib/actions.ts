@@ -1,6 +1,6 @@
 import { sheetTitle, Constants } from "../api/[token]/route";
 
-import { createHash } from "crypto";
+import { generateSlug } from "random-word-slugs";
 import { jwtClient } from "./jwtClient";
 import { loadSheet } from "./loadSheet";
 
@@ -14,15 +14,12 @@ export async function seedHashes() {
     for (const row of rows) {
       const hash = row.get(Constants.HASH);
       if (!hash) {
-        const hash = createHash("sha256", { encoding: "utf-8" });
-        const hashDigest = hash.digest("base64url");
-        row.set(Constants.HASH, hashDigest);
-        row.save()
+        row.set(Constants.HASH, generateSlug());
+        row.save();
+        console.log("updated hash");
       }
     }
     await sheet.saveUpdatedCells();
-
-    const { sheetCount, spreadsheetId, sheetsByTitle } = doc;
     /** Fill in hashes where need be */
     return Response.json({ ok: true });
   } catch (err: any) {

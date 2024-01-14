@@ -4,6 +4,7 @@ import { notFound, redirect } from "next/navigation";
 import { Row } from '../../lib/types';
 import { InviteForm } from '../../lib/InviteForm';
 import { revalidateTag } from 'next/cache';
+import absoluteUrl from 'next-absolute-url'
 import { Greeting } from './Greeting';
 
 export default async function Home({
