@@ -12,10 +12,10 @@ export function InviteForm(props: {
   return (
     <fieldset className="space-y-4 py-8">
       <h3 className="text-sm">{lang("answer", props.lang)}</h3>
-      <div className="flex space-x-8 text-2xl flex-row items-center">
+      <div className="max-md:block md:flex md:space-x-8 md:text-2xl md:flex-row md:items-center max-md:space-y-4">
         <label
           className={
-            "cursor-pointer border border-slate-300 px-4 py-2 hover:border-slate-800 " +
+            "max-md:block cursor-pointer border border-slate-300 px-4 py-2 hover:border-slate-800 " +
             (answer === "yes" ? "bg-slate-800 text-white border-slate-800" : "")
           }
         >
@@ -34,7 +34,7 @@ export function InviteForm(props: {
 
         <label
           className={
-            "cursor-pointer border border-slate-300 px-4 py-2 hover:border-slate-800 " +
+            "max-md:block cursor-pointer border border-slate-300 px-4 py-2 hover:border-slate-800 " +
             (answer === "no" ? "bg-slate-800 text-white border-slate-800" : "")
           }
         >
@@ -56,7 +56,7 @@ export function InviteForm(props: {
       {answer === "yes" && (
         <>
           <div className="space-y-8 pt-16">
-            <p className="text-2xl">{lang("wonderful", props.lang)}</p>
+            <p className="md:text-2xl">{lang("wonderful", props.lang)}</p>
             <textarea
               name="dietaryRequirements"
               placeholder={lang("dietaryRequirements", props.lang)}

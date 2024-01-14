@@ -59,13 +59,15 @@ export default async function Home({
   return (
     <>
       <form className={`w-full`} action={rsvp}>
-        <h1 className={`text-6xl w-full block leading-tight`}>
+        <h1
+          className={`max-md:text-4xl md:text-6xl w-full block leading-tight`}
+        >
           <Greeting lang={params.lang} names={json.NAMES.split(",")} />
         </h1>
 
         <div className="pt-10 block space-y-2">
           <p>{inviteText}</p>
-          <p className="text-3xl leading-relaxed">
+          <p className="max-md:text-2xl md:text-3xl leading-relaxed">
             <strong>{lang("date", params.lang)}</strong>{" "}
             {lang("timeAndLocation", params.lang)}
           </p>
@@ -73,7 +75,7 @@ export default async function Home({
           <p className="pb-6">{lang("rsvp", params.lang)}</p>
 
           <InviteForm row={json} lang={params.lang} />
-          <div className="w-full align-center justify-center items-center flex py-12 ">
+          <div className="w-full align-center justify-center items-center flex max-md:pt-10 md:py-12 ">
             <Image
               src="/landscape1.png"
               alt="Ashton Memorial"
