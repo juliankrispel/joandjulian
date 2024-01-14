@@ -1,10 +1,4 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from "next";
-import { JWT } from "google-auth-library";
-import keyjson from "../../../joandjulian-0761ab687054.json";
-import { jwtClient } from "../../lib/jwtClient";
-import { loadSheet } from "../../lib/loadSheet";
-import { notFound, redirect } from "next/navigation";
 import { getSheetRow } from "../../lib/getSheetRow";
 import { NextRequest } from "next/server";
 

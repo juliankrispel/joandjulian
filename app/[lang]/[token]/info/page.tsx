@@ -185,29 +185,30 @@ export default async function Info({
         <h3 className="pt-4 text-3xl">{lang("giftsHeading", params.lang)}</h3>
         <p>{lang("giftsText", params.lang)}</p>
         <h3 className="pt-4 text-3xl">{lang("answer", params.lang)}</h3>
-        <p>
-          {lang(
-            isSingle ? "yourAnswersSingle" : "yourAnswersPlural",
-            params.lang
-          )}
-        </p>
-        <ul>
-          <li>
-            {lang("yourDietaryRequirements", params.lang)} :
-            {json.DIETARY_REQUIREMENTS}
-          </li>
-          <li>
-            {lang("yourAllergies", params.lang)} :{json.ALLERGIES}
-          </li>
-          {isSingle && (
+        <div className="space-y-4">
+          <p>
+            {lang(
+              isSingle ? "yourAnswersSingle" : "yourAnswersPlural",
+              params.lang
+            )}{" "}
+            <a
+              href={`/${params.lang}/${params.token}?edit=true`}
+              className="underline"
+            >
+              {lang("edit", params.lang)}
+            </a>
+          </p>
+          <ul className="space-y-2">
+            <li>{lang("inviteAccepted", params.lang)}</li>
             <li>
-              {lang("yourPlusOne", params.lang)} :{json.PLUS_ONE}
+              {lang("yourDietaryRequirements", params.lang)}:{" "}
+              {json.DIETARY_REQUIREMENTS || "n/a"}
             </li>
-          )}
-        </ul>
-        <a href={`/${params.lang}/${params.token}?edit=true`}>
-          {lang("edit", params.lang)}
-        </a>
+            <li>
+              {lang("yourAllergies", params.lang)}: {json.ALLERGIES || "n/a"}
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

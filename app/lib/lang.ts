@@ -233,9 +233,13 @@ const dict = {
     "de-AT": "Deine Nachricht an uns",
     "en-GB": "Your message to us",
   },
+  inviteAccepted: {
+    "de-AT": "Einladung angenommen: Ja",
+    "en-GB": "Invite accepted: Yes",
+  },
   submitAnswer: {
-    "de-AT": "Antwort senden",
-    "en-GB": "Submit Answer",
+    "de-AT": "Antwort speichern",
+    "en-GB": "Submit answer",
   },
   notFoundHeader: {
     "de-AT": "Zugang nur für geladene Gäste",
@@ -288,15 +292,15 @@ const dict = {
   },
   yourAnswersSingle: {
     "de-AT":
-      "Hier sind die Antworten, die du uns geschickt hast. Falls du etwas ändern möchtest, bitte hier klicken.",
+      "Hier sind die Antworten, die du uns geschickt hast. Falls du etwas ändern möchtest, bitte hier klicken:",
     "en-GB":
-      "Here are the answers you have sent us. If you would like to change anything, please click here.",
+      "Here are the answers you have sent us. If you would like to change anything, please click here:",
   },
   yourAnswersPlural: {
     "de-AT":
-      "Hier sind die Antworten, die ihr uns geschickt habt. Falls ihr etwas ändern möchtet, bitte hier klicken.",
+      "Hier sind die Antworten, die ihr uns geschickt habt. Falls ihr etwas ändern möchtet, bitte hier klicken:",
     "en-GB":
-      "Here are the answers you have sent us. If you would like to change anything, please click here.",
+      "Here are the answers you have sent us. If you would like to change anything, please click here:",
   },
   yourAllergies: {
     "de-AT": "Allergien",
