@@ -80,9 +80,9 @@ const dict = {
   },
   noPlusOne: {
     "de-AT":
-      "Momentan können wir leider keine Begleitungen einladen. Das könnte sich aber noch ändern wenn wir die Anzahl der Gäste wissen. Bitte melde dich bei uns falls du eine Begleitung mitbringen möchtest und wir melden uns bei dir sobald wir mehr wissen.",
+      "Wegen Platzmangel können wir momentan leider keine Begleitung einladen. Das könnte sich aber noch ändern wenn wir die Anzahl der Gäste wissen. Bitte melde dich bei uns falls du eine Begleitung mitbringen möchtest und wir melden uns bei dir sobald wir mehr wissen.",
     "en-GB":
-      "Unfortunately we are not able to invite plus ones at the moment. This may change nearer to the event. Please get in touch if you would like to bring a plus one and we will let you know once we know more.",
+      "Unfortunately due to limited capacity at the ceremony venue we are not able to invite plus ones at the moment. This may change nearer to the event. Please get in touch if you would like to bring a plus one and we will let you know once we know more.",
   },
   withReception: {
     "de-AT":
