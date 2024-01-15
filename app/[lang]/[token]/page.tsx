@@ -65,7 +65,7 @@ export default async function Home({
         </h1>
 
         <div className="pt-10 block space-y-4">
-          <p className='text-2xl'>{inviteText}</p>
+          <p className="text-2xl">{inviteText}</p>
           <p>{lang("withReception", params.lang)}</p>
           <p className="pb-6">{lang("rsvp", params.lang)}</p>
 

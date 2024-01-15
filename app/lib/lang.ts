@@ -152,9 +152,9 @@ Bitte antwortet bis spätestens 1ten März 2024, indem ihr auf diesen Link klick
   },
   theCoachWillCollect: {
     "de-AT":
-      "Um 15:45 wird der Bus euch von Ashton Memorial abholen und zurück zu Arkholme Village Hall bringen, wo die Festlichkeiten um 16:30 beginnen.",
+      "Um 15:45 werden die Busse euch von Williamson Park abholen und zurück zu Arkholme Village Hall bringen, wo die Festlichkeiten um 16:30 beginnen.",
     "en-GB":
-      "The coaches will collect guests from Ashton Memorial at 3:45pm to return you to Arkholme Village Hall for the reception at 4:30pm.",
+      "The coaches will collect guests from Williamson Park at 3:45pm to return you to Arkholme Village Hall for the reception at 4:30pm.",
   },
   musicForm: {
     "en-GB":
@@ -325,8 +325,10 @@ Ein E-Piano, ein Schlagzeug, eine Gitarre und ein Bass-Gitarre werden zur Verfü
     "en-GB": "Hello",
   },
   acceptedSingle: {
-    "de-AT": "Wir freuen uns, dich bei unserer Hochzeit dabei zu haben.",
-    "en-GB": "We are looking forward to seeing you at the wedding.",
+    "en-GB":
+      "We are so pleased you can make it to our wedding and are looking forward to sharing our day with you.",
+    "de-AT":
+      "Wir freuen uns sehr das du es schaffst dabei zu sein und mit uns feiern wirst.",
   },
   infoSingle: {
     "de-AT":
@@ -335,8 +337,10 @@ Ein E-Piano, ein Schlagzeug, eine Gitarre und ein Bass-Gitarre werden zur Verfü
       "We are happy to have you at our wedding. We will keep you posted in the coming months.",
   },
   acceptedPlural: {
-    "de-AT": "Wir freuen uns, euch bei unserer Hochzeit dabei zu haben.",
-    "en-GB": "We are looking forward to seeing you at the wedding.",
+    "de-AT":
+      "Wir freuen uns sehr das ihr es schafft dabei zu sein und mit uns feiern werdet.",
+    "en-GB":
+      "We are so pleased you can make it to our wedding and are looking forward to sharing our day with you.",
   },
   infoPlural: {
     "de-AT":

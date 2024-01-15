@@ -99,6 +99,7 @@ export default async function Info({
           <li>
             <a
               className="underline"
+              target="_blank"
               href="https://www.riversidecaravanpark.co.uk/"
             >
               Riverside Caravan Park
