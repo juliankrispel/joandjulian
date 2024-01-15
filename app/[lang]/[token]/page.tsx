@@ -64,12 +64,8 @@ export default async function Home({
           <Greeting lang={params.lang} names={json.NAMES.split(",")} />
         </h1>
 
-        <div className="pt-10 block space-y-2">
-          <p>{inviteText}</p>
-          <p className="max-md:text-2xl md:text-3xl leading-relaxed">
-            <strong>{lang("date", params.lang)}</strong>{" "}
-            {lang("timeAndLocation", params.lang)}
-          </p>
+        <div className="pt-10 block space-y-4">
+          <p className='text-2xl'>{inviteText}</p>
           <p>{lang("withReception", params.lang)}</p>
           <p className="pb-6">{lang("rsvp", params.lang)}</p>
 

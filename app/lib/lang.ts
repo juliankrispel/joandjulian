@@ -49,18 +49,39 @@ const dict = {
   },
   invitePlural: {
     "de-AT":
-      "Wir würden uns freuen, euch bei unserer Hochzeit dabei zu haben. Sie findet statt am:",
-    "en-GB": "We would love to invite you to our wedding on the",
+      "Wir würden uns freuen, euch bei unserer Hochzeit dabei zu haben. Sie findet statt um 14 Uhr am 15ten August 2024 bei Ashton Memorial, Williamson Park, Quernmore Road, Lancaster.",
+    "en-GB": `We would love to invite you to our wedding at 2pm on the 15th of August 2024 at Ashton Memorial, Williamson Park, Quernmore Road, Lancaster.`,
   },
   inviteSingular: {
     "de-AT":
-      "Wir würden uns freuen, dich zu unserer Hochzeit einzuladen. Sie findet statt am:",
-    "en-GB": "We would love to invite you to our wedding on the",
+      "Wir würden uns freuen, dich zu unserer Hochzeit einzuladen. Sie findet statt um 14 Uhr am 15ten August 2024 bei Ashton Memorial, Williamson Park, Quernmore Road, Lancaster.",
+    "en-GB": `We would love to invite you to our wedding at 2pm on the 15th of August 2024 at Ashton Memorial, Williamson Park, Quernmore Road, Lancaster.`,
   },
   yourMessage: {
     "de-AT":
       "Falls du uns noch eine Nachricht schicken willst, kannst du das hier tun.",
     "en-GB": "If you would like to send us a message you can do so here.",
+  },
+  inviteMessageSingle: {
+    "en-GB": `We'd love to invite you to our wedding on the 15th of August 2024.
+
+Please answer as soon as possible and by 1st March 2024 at the latest by clicking on this link: joandjulian.com/`,
+    "de-AT": `Wir würden dich gerne zu unserer Hochzeit einladen, am 15ten August 2024.
+
+Bitte antworte bis spätestens 1ten März 2024, indem du auf diesen Link klickst: joandjulian.com/`,
+  },
+  inviteMessagePlural: {
+    "en-GB": `We'd love to invite you to our wedding on the 15th of August 2024. 
+
+Please answer as soon as possible and by 1st March 2024 at the latest by clicking on this link: joandjulian.com/`,
+    "de-AT": `Wir würden euch gerne zu unserer Hochzeit einladen, am 15ten August 2024.
+
+Bitte antwortet bis spätestens 1ten März 2024, indem ihr auf diesen Link klickt: joandjulian.com/`,
+  },
+  weAreTrying: {
+    "en-GB":
+      "We are trying to do our bit for the planet so all invites and RSVPs will be digital. Please let us know if you have any difficulties in accessing or responding to your invite.",
+    "de-AT": `Wir versuchen unseren Teil für die Umwelt zu tun, deshalb werden alle Einladungen digital sein. Bitte lass uns wissen, falls du Probleme hast, auf deine Einladung zuzugreifen oder zu antworten.`,
   },
   thatsAShame: {
     "de-AT":

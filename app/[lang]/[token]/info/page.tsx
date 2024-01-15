@@ -88,7 +88,11 @@ export default async function Info({
 
         <ul className="list-disc pl-5">
           <li>
-            <a className="underline" href="https://www.wenningdale.co.uk/">
+            <a
+              className="underline"
+              href="https://www.wenningdale.co.uk/"
+              target="_blank"
+            >
               Wenningdale Escapes
             </a>
           </li>
@@ -103,12 +107,17 @@ export default async function Info({
           </li>
           <li>
             {lang("variousHolidayCottages", params.lang)}{" "}
-            <a className="underline" href="https://www.airbnb.co.uk/">
+            <a
+              className="underline"
+              href="https://www.airbnb.co.uk/"
+              target="_blank"
+            >
               AirBnB
             </a>
             ,{" "}
             <a
               className="underline"
+              target="_blank"
               href="https://www.sykescottages.co.uk/yorkshire-holiday-cottages.html"
             >
               Sykes Cottages
@@ -116,6 +125,7 @@ export default async function Info({
             {lang("and", params.lang)}{" "}
             <a
               className="underline"
+              target="_blank"
               href="https://www.yorkshireholidaycottages.co.uk/"
             >
               Yorkshire Holiday Cottages
@@ -139,6 +149,7 @@ export default async function Info({
           <li>
             <a
               className="underline"
+              target="_blank"
               href="https://www.facebook.com/benthamtaxis/"
             >
               Bentham Taxis
@@ -149,7 +160,11 @@ export default async function Info({
             </a>
           </li>
           <li>
-            <a className="underline" href="https://www.lancastertaxis.net/">
+            <a
+              target="_blank"
+              className="underline"
+              href="https://www.lancastertaxis.net/"
+            >
               Lancaster Taxi Service
             </a>
             :{" "}
