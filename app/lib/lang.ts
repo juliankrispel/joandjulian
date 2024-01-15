@@ -269,9 +269,9 @@ const dict = {
     "en-GB": "If you have any dietary requirements, please enter them here.",
   },
   dietaryRrequirementsPlural: {
-    "en-GB": "Please detail the dietary requirements of each person here.",
+    "en-GB": "If any of you have any allergies please detail them here.",
     "de-AT":
-      "Falls ihr gewisse Ernährungsbedürfnisse habt, gebt diese bitte hier ein, pro Person.",
+      "Falls ihr gewisse Ernährungsbedürfnisse habt, gebt diese bitte hier ein.",
   },
   allergies: {
     "de-AT": "Falls du Allergien hast, gib diese bitte hier ein.",

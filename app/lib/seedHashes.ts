@@ -16,7 +16,7 @@ export async function seedHashes() {
       const hash = row.get(Constants.CODE);
       if (!hash) {
         row.set(Constants.CODE, generateSlug());
-        row.save();
+        await row.save();
         console.log("updated hash");
       }
     }
