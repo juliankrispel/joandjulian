@@ -3,7 +3,7 @@ import { Item, lang } from "../../lib/lang";
 import { notFound, redirect } from "next/navigation";
 import { Row } from '../../lib/types';
 import { InviteForm } from '../../lib/InviteForm';
-import { Greeting } from './Greeting';
+import { Greeting } from '../../lib/Greeting';
 import { Constants } from '../../api/[token]/Constants';
 
 export default async function Home({

@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { Item, lang } from "../../../lib/lang";
 import { Row } from "../../../lib/types";
 import Image from "next/image";
-import { Greeting } from "../Greeting";
+import { Greeting } from "../../../lib/Greeting";
 
 export default async function Info({
   params,
@@ -72,8 +72,9 @@ export default async function Info({
         )}
 
         <h3 className="pt-4 text-3xl">{lang("musicHeading", params.lang)}</h3>
-        <p className="whitespace-break-spaces"e="whitespace-break-spaces">{lang("musicInfo", params.lang)}</p>
-
+        <p className="whitespace-break-spaces">
+          {lang("musicInfo", params.lang)}
+        </p>
 
         <h3 className="pt-4 text-3xl">{lang("parkingHeading", params.lang)}</h3>
         <p>{lang("parking", params.lang)}</p>

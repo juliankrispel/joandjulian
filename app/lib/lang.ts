@@ -74,9 +74,9 @@ const dict = {
   },
   attendance: {
     "en-GB":
-      "If any of you are not able to attend, please enter their names here.",
+      "If anyone named on your invitation is not able to attend, please provide details here.",
     "de-AT":
-      "Falls jemand von euch nicht teilnehmen kann, bitte gib hier ihre Namen ein.",
+      "Falls jemand von euch nicht teilnehmen kann, gebt bitte hier Bescheid.",
   },
   timeAndLocation: {
     "de-AT":
@@ -86,9 +86,9 @@ const dict = {
   },
   noPlusOne: {
     "de-AT":
-      "Wegen Platzmangel können wir momentan leider keine Begleitung einladen. Das könnte sich aber noch ändern wenn wir die Anzahl der Gäste wissen. Bitte melde dich bei uns falls du eine Begleitung mitbringen möchtest und wir melden uns bei dir sobald wir mehr wissen.",
+      "Wegen Platzmangel können wir momentan leider keine Begleitung einladen. Das könnte sich aber noch ändern wenn wir die Anzahl der Gäste wissen. Bitte melde dich bei uns falls du eine Begleitung mitbringen möchtest und wir werden uns nach dem 1ten März bei dir melden.",
     "en-GB":
-      "Unfortunately due to limited capacity at the ceremony venue we are not able to invite plus ones at the moment. This may change nearer to the event. Please get in touch if you would like to bring a plus one and we will let you know once we know more.",
+      "Unfortunately due to limited capacity at the ceremony venue we are not able to invite plus ones at the moment. This may change nearer to the event. Please get in touch if you would like to bring a plus one and we will get back to you after the 1st of March.",
   },
   withReception: {
     "de-AT":
@@ -126,15 +126,14 @@ const dict = {
   },
   ceremonyWillBegin: {
     "de-AT":
-      "Die Zeremonie beginnt um 14 Uhr. Danach gibt es Getränke und ein paar Fotos.",
-    "en-GB":
-      "The ceremony will begin at 2pm and will be followed by drinks and photographs.",
+      "Die Busse werden zwischen 1:15 und 1:30 bei Williamson Park ankommen und Ashton Memoria wird ab 1:30 unseren Gästen zur Verfügung stehen. Die Zeremonie beginnt um 14 Uhr. Danach gibt es Getränke und ein paar Fotos.",
+    "en-GB": `The coaches will arive at Williamson Park between 1:15 and 1:30 and Ashton memorial will be available to our guests from 1:30. The ceremony will begin at 2pm and will be followed by drinks and photographs.`,
   },
   theCoachWillCollect: {
     "de-AT":
       "Um 15:45 wird der Bus euch von Ashton Memorial abholen und zurück zu Arkholme Village Hall bringen, wo die Festlichkeiten um 16:30 beginnen.",
     "en-GB":
-      "The coach will collect guests from Ashton Memorial at 3:45pm to return you to Arkholme Village Hall for the reception at 4:30pm.",
+      "The coaches will collect guests from Ashton Memorial at 3:45pm to return you to Arkholme Village Hall for the reception at 4:30pm.",
   },
   musicForm: {
     "en-GB":
@@ -287,7 +286,8 @@ Ein E-Piano, ein Schlagzeug, eine Gitarre und ein Bass-Gitarre werden zur Verfü
     "en-GB": "If you have any dietary requirements, please enter them here.",
   },
   dietaryRrequirementsPlural: {
-    "en-GB": "If any of you have any allergies please detail them here.",
+    "en-GB":
+      "If any of you have any dietary requirements please detail them here.",
     "de-AT":
       "Falls ihr gewisse Ernährungsbedürfnisse habt, gebt diese bitte hier ein.",
   },
@@ -324,16 +324,12 @@ Ein E-Piano, ein Schlagzeug, eine Gitarre und ein Bass-Gitarre werden zur Verfü
       "We are happy to have you at our wedding. We will keep you posted in the coming months.",
   },
   yourAnswersSingle: {
-    "de-AT":
-      "Falls du etwas an deiner Antwort ändern möchest, bitte ",
-    "en-GB":
-      "If you would like to change anything about your answer, please ",
+    "de-AT": "Falls du etwas an deiner Antwort ändern möchest, bitte ",
+    "en-GB": "If you would like to change anything about your answer, please ",
   },
   yourAnswersPlural: {
-    "de-AT":
-      "Falls ihr etwas an eurer Antwort ändern möchtet, bitte ",
-    "en-GB":
-      "If you would like to change anything about your answer, please ",
+    "de-AT": "Falls ihr etwas an eurer Antwort ändern möchtet, bitte ",
+    "en-GB": "If you would like to change anything about your answer, please ",
   },
   yourAllergies: {
     "de-AT": "Allergien",

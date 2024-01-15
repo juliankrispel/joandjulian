@@ -5,6 +5,8 @@ import { updateSheet } from "../lib/updateSheet";
 import { s3 } from "../lib/s3";
 import { s3GetSheet } from "../lib/s3GetSheet";
 import { s3UpdateSheet } from "../lib/s3UpdateSheet";
+import { Greeting } from "../lib/Greeting";
+import { SmallGreeting } from "../lib/SmallGreeting";
 
 console.log({
   id: process.env.AWS_ACCESS_KEY_ID,
@@ -62,9 +64,16 @@ export default async function Home() {
           </button>
         </form>
       </div>
-      <div>
+      <div className="flex flex-col space-y-6">
         <h1>German</h1>
 
+        {sheet.map((row) => (
+          <SmallGreeting
+            lang="de-AT"
+            names={row.NAMES.split(",")}
+            key={row.CODE}
+          />
+        ))}
       </div>
       <div>
         <h1>English</h1>

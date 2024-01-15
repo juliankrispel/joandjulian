@@ -59,6 +59,17 @@ export function InviteForm(props: {
           <div className="space-y-8 pt-16">
             <p className="md:text-2xl">{lang("wonderful", props.lang)}</p>
 
+            {!isSingle && (
+              <label className="space-y-2 block">
+                <p>{lang("attendance", props.lang)}</p>
+                <textarea
+                  className="border border-slate-400 p-2 w-full"
+                  name="attendance"
+                  defaultValue={props.row.ATTENDANCE}
+                />
+              </label>
+            )}
+
             <label className="space-y-2 block">
               <p>
                 {lang(
@@ -88,26 +99,6 @@ export function InviteForm(props: {
                 defaultValue={props.row.ALLERGIES}
               />
             </label>
-            {!isSingle && (
-              <label className="space-y-2 block">
-                <p>{lang("attendance", props.lang)}</p>
-                <textarea
-                  className="border border-slate-400 p-2 w-full"
-                  name="attendance"
-                  defaultValue={props.row.ATTENDANCE}
-                />
-              </label>
-            )}
-            {
-              <label className="space-y-2 block">
-                <p>{lang("musicForm", props.lang)}</p>
-                <textarea
-                  className="border border-slate-400 p-2 w-full"
-                  name="music"
-                  defaultValue={props.row.MUSIC}
-                ></textarea>
-              </label>
-            }
           </div>
           <p>{lang("yourMessage", props.lang)}</p>
         </>

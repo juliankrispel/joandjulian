@@ -1,5 +1,5 @@
-import { lang } from "../../lib/lang";
-import { isMale } from '../../lib/isMale';
+import { lang } from "./lang";
+import { isMale } from './isMale';
 
 export const Greeting = (props: { names: string[]; lang: "de-AT" | "en-GB"; }) => {
   let names = props.names;
