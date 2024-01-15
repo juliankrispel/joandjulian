@@ -148,7 +148,7 @@ Bitte antwortet bis spätestens 1ten März 2024, indem ihr auf diesen Link klick
   ceremonyWillBegin: {
     "de-AT":
       "Die Busse werden zwischen 1:15 und 1:30 bei Williamson Park ankommen und Ashton Memoria wird ab 1:30 unseren Gästen zur Verfügung stehen. Die Zeremonie beginnt um 14 Uhr. Danach gibt es Getränke und ein paar Fotos.",
-    "en-GB": `The coaches will arive at Williamson Park between 1:15 and 1:30 and Ashton memorial will be available to our guests from 1:30. The ceremony will begin at 2pm and will be followed by drinks and photographs.`,
+    "en-GB": `The coaches will arive at Williamson Park between 1:15 and 1:30 and Ashton Memorial will be available to our guests from 1:30. The ceremony will begin at 2pm and will be followed by drinks and photographs.`,
   },
   theCoachWillCollect: {
     "de-AT":
