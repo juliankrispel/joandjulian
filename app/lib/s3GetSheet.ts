@@ -1,4 +1,5 @@
 import { s3 } from "./s3";
+import { Row } from "./types";
 
 export async function s3GetSheet() {
   const o = await s3
@@ -8,5 +9,5 @@ export async function s3GetSheet() {
     })
     .promise();
   console.log({ o });
-  return JSON.parse(o.Body!.toString()) as any[];
+  return JSON.parse(o.Body!.toString()) as Row[];
 }

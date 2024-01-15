@@ -11,7 +11,7 @@ console.log({
   secret: process.env.AWS_SECRET_ACCESS_KEY,
 });
 
-export default function Home() {
+export default async function Home() {
   if (process.env.NODE_ENV !== "development") {
     redirect("/");
   }
@@ -19,6 +19,8 @@ export default function Home() {
     "use server";
     await seedHashes();
   }
+
+  const sheet = await s3GetSheet();
 
   async function sheetsToS3() {
     "use server";
@@ -42,22 +44,31 @@ export default function Home() {
 
 
   return (
-    <div className="flex space-x-4 w-full justify-start">
-      <form action={setupCodes}>
-        <button className="p-8 bg-stone-800 text-white px-4 py-3 ">
-          Seed codes
-        </button>
-      </form>
-      <form action={sheetsToS3}>
-        <button className="p-8 bg-stone-800 text-white px-4 py-3 ">
-          Sheets to s3
-        </button>
-      </form>
-      <form action={s3ToSheets}>
-        <button className="p-8 bg-stone-800 text-white px-4 py-3 ">
-          s3 to sheets
-        </button>
-      </form>
+    <div className="w-full">
+      <div className="flex space-x-4 w-full justify-start">
+        <form action={setupCodes}>
+          <button className="p-8 bg-stone-800 text-white px-4 py-3 ">
+            Seed codes
+          </button>
+        </form>
+        <form action={sheetsToS3}>
+          <button className="p-8 bg-stone-800 text-white px-4 py-3 ">
+            Sheets to s3
+          </button>
+        </form>
+        <form action={s3ToSheets}>
+          <button className="p-8 bg-stone-800 text-white px-4 py-3 ">
+            s3 to sheets
+          </button>
+        </form>
+      </div>
+      <div>
+        <h1>German</h1>
+
+      </div>
+      <div>
+        <h1>English</h1>
+      </div>
     </div>
   );
 }

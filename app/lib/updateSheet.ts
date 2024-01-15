@@ -2,8 +2,9 @@ import { sheetTitle } from "../api/[token]/route";
 import { Constants } from "../api/[token]/Constants";
 import { jwtClient } from "./jwtClient";
 import { loadSheet } from "./loadSheet";
+import { Row } from "./types";
 
-export async function updateSheet(rows: { [key: string]: string }[]) {
+export async function updateSheet(rows: Row[]) {
   const serviceAccountAuth = jwtClient();
   const doc = await loadSheet(serviceAccountAuth);
   const { sheetsByTitle } = doc;
@@ -17,7 +18,8 @@ export async function updateSheet(rows: { [key: string]: string }[]) {
   await sheet.loadHeaderRow();
   const sheetRows = await sheet.getRows();
   await Promise.all(
-    rows.map(async (row) => {
+    rows.map(async (_row) => {
+      const row = _row as any;
       const sheetRow = sheetRows.find(
         (r) => r.get(Constants.NAMES) === row[Constants.NAMES]
       );

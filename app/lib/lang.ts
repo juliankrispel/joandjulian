@@ -325,15 +325,15 @@ Ein E-Piano, ein Schlagzeug, eine Gitarre und ein Bass-Gitarre werden zur Verfü
   },
   yourAnswersSingle: {
     "de-AT":
-      "Falls du etwas an deiner Antwort ändern möchest, bitte hier klicken:",
+      "Falls du etwas an deiner Antwort ändern möchest, bitte ",
     "en-GB":
-      "If you would like to change anything about your answer, please click here:",
+      "If you would like to change anything about your answer, please ",
   },
   yourAnswersPlural: {
     "de-AT":
-      "Falls ihr etwas an eurer Antwort ändern möchtet, bitte hier klicken:",
+      "Falls ihr etwas an eurer Antwort ändern möchtet, bitte ",
     "en-GB":
-      "If you would like to change anything about your answer, please click here:",
+      "If you would like to change anything about your answer, please ",
   },
   yourAllergies: {
     "de-AT": "Allergien",
@@ -348,8 +348,8 @@ Ein E-Piano, ein Schlagzeug, eine Gitarre und ein Bass-Gitarre werden zur Verfü
     "en-GB": "Plus one",
   },
   edit: {
-    "de-AT": "ändern",
-    "en-GB": "edit",
+    "de-AT": "hier klicken.",
+    "en-GB": "click here.",
   },
 } as const;
 
