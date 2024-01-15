@@ -7,4 +7,5 @@ export enum Constants {
   ANSWER = "ANSWER",
   MESSAGE = "MESSAGE",
   ATTENDANCE = "ATTENDANCE",
+  MUSIC = "MUSIC",
 }

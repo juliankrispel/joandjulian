@@ -126,19 +126,25 @@ const dict = {
   },
   ceremonyWillBegin: {
     "de-AT":
-      "Die Zeremonie beginnt um 14 Uhr. Anschließend gibt es Getränke und Photographie.",
+      "Die Zeremonie beginnt um 14 Uhr. Danach gibt es Getränke und ein paar Fotos.",
     "en-GB":
       "The ceremony will begin at 2pm and will be followed by drinks and photographs.",
   },
   theCoachWillCollect: {
     "de-AT":
-      "Der Bus wird die Gäste um 15:45 Uhr vom Ashton Memorial abholen und zurück zur Arkholme Village Hall bringen, wo der Empfang um 16:30 Uhr beginnt.",
+      "Um 15:45 wird der Bus euch von Ashton Memorial abholen und zurück zu Arkholme Village Hall bringen, wo die Festlichkeiten um 16:30 beginnen.",
     "en-GB":
       "The coach will collect guests from Ashton Memorial at 3:45pm to return you to Arkholme Village Hall for the reception at 4:30pm.",
   },
+  musicForm: {
+    "en-GB":
+      "There will be an open stage for live music where anyone is welcome to perform. If you would like to perform, please let us know approximately how much time you will need so we can plan accordingly.",
+    "de-AT":
+      "Es wird eine offene Bühne für Live-Musik geben, wo jeder willkommen ist. Falls du etwas spielen willst, lass uns bitte wissen wie viel Zeit du ungefähr brauchst, damit wir das einplanen können.",
+  },
   foodWillBeServed: {
     "de-AT":
-      "Das Essen wird ab 17 Uhr serviert und musiziert wird ab 19:30 Uhr",
+      "Um 17 Uhr wird das Essen serviert und musiziert wird ab 19:30 Uhr",
     "en-GB":
       "Food will be served between 5 and 7pm and live music will start from 7:30pm",
   },
@@ -217,7 +223,7 @@ const dict = {
   },
   coachesWillLeaveAt: {
     "de-AT":
-      "Die Busse werden um 12:45 Uhr von der Arkholme Village Hall abfahren, um die Gäste zur Zeremonie am Ashton Memorial, Williamson Park, Quernmore Road, Lancaster LA1 1UX zu bringen.",
+      "Die Busse werden um 12:45 Uhr von der Arkholme Village Hall abfahren, um die Gäste zur Zeremonie bei Ashton Memorial, Williamson Park, Quernmore Road, Lancaster LA1 1UX zu bringen.",
     "en-GB":
       "Coaches will be leaving from Arkholme Village Hall at 12:45pm to take guests to the ceremony venue at Ashton Memorial, Williamson Park, Quernmore Road, Lancaster LA1 1UX.",
   },
@@ -263,6 +269,18 @@ const dict = {
     "de-AT": "Begleitung",
     "en-GB": "Plus one",
   },
+  musicHeading: {
+    "de-AT": "Musik",
+    "en-GB": "Music",
+  },
+  musicInfo: {
+    "en-GB": `There will be an open stage for live music and we encourage anyone who wishes to play a few songs to do so! If you would like to perform, please let us know approximately how much time you will need so we can plan accordingly.
+
+An e-piano, a drum-kit, a guitar and a bass-guitar will be available as well as a few microphones.`,
+    "de-AT": `Es wird eine offene Bühne für Live-Musik geben, wo jeder willkommen ist. Falls du etwas spielen willst, lass uns bitte wissen wie viel Zeit du ungefähr brauchst, damit wir das einplanen können.
+
+Ein E-Piano, ein Schlagzeug, eine Gitarre und ein Bass-Gitarre werden zur Verfügung stehen, sowie ein paar Mikrofone.`,
+  },
   dietaryRequirementsSingle: {
     "de-AT":
       "Falls du gewisse Ernährungsbedürfnisse hast, gib diese bitte hier ein.",
@@ -273,9 +291,13 @@ const dict = {
     "de-AT":
       "Falls ihr gewisse Ernährungsbedürfnisse habt, gebt diese bitte hier ein.",
   },
-  allergies: {
+  allergiesSingle: {
     "de-AT": "Falls du Allergien hast, gib diese bitte hier ein.",
     "en-GB": "If you have any allergies, please enter them here.",
+  },
+  allergiesPlural: {
+    "en-GB": "If any of you have any allergies please detail them here.",
+    "de-AT": "Falls ihr Allergien habt, gebt diese bitte hier ein.",
   },
   hello: {
     "de-AT": "Hallo",

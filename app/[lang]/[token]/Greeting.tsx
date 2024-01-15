@@ -21,8 +21,13 @@ export const Greeting = (props: { names: string[]; lang: "de-AT" | "en-GB"; }) =
     lastName
   ) : (
     <>
-      {names.join(", ")}
-      <br />
+      {names.map((name, index) => {
+        return (
+          <>
+            {name}{index === names.length - 1 ? ' ' : <>{','}<br /></>}
+          </>
+        );
+      })}
       <span>
         {lang("and", props.lang)} {lastName}
       </span>

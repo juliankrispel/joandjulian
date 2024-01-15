@@ -58,33 +58,58 @@ export function InviteForm(props: {
         <>
           <div className="space-y-8 pt-16">
             <p className="md:text-2xl">{lang("wonderful", props.lang)}</p>
-            <textarea
-              name="dietaryRequirements"
-              placeholder={lang(
-                isSingle
-                  ? "dietaryRequirementsSingle"
-                  : "dietaryRrequirementsPlural",
-                props.lang
-              )}
-              className="border border-slate-400 p-2 w-full"
-              defaultValue={props.row.DIETARY_REQUIREMENTS}
-            />
-           <textarea
-              className="border border-slate-400 p-2 w-full"
-              name="allergies"
-              placeholder={lang("allergies", props.lang)}
-              defaultValue={props.row.ALLERGIES}
-            />
-            {!isSingle && (
+
+            <label className="space-y-2 block">
+              <p>
+                {lang(
+                  isSingle
+                    ? "dietaryRequirementsSingle"
+                    : "dietaryRrequirementsPlural",
+                  props.lang
+                )}
+              </p>
+              <textarea
+                name="dietaryRequirements"
+                className="border border-slate-400 p-2 w-full"
+                defaultValue={props.row.DIETARY_REQUIREMENTS}
+              />
+            </label>
+
+            <label className="space-y-2 block">
+              <p>
+                {lang(
+                  isSingle ? "allergiesSingle" : "allergiesPlural",
+                  props.lang
+                )}
+              </p>
               <textarea
                 className="border border-slate-400 p-2 w-full"
-                name="attendance"
-                placeholder={lang("attendance", props.lang)}
-                defaultValue={props.row.ATTENDANCE}
+                name="allergies"
+                defaultValue={props.row.ALLERGIES}
               />
+            </label>
+            {!isSingle && (
+              <label className="space-y-2 block">
+                <p>{lang("attendance", props.lang)}</p>
+                <textarea
+                  className="border border-slate-400 p-2 w-full"
+                  name="attendance"
+                  defaultValue={props.row.ATTENDANCE}
+                />
+              </label>
             )}
+            {
+              <label className="space-y-2 block">
+                <p>{lang("musicForm", props.lang)}</p>
+                <textarea
+                  className="border border-slate-400 p-2 w-full"
+                  name="music"
+                  defaultValue={props.row.MUSIC}
+                ></textarea>
+              </label>
+            }
           </div>
-          <p className="text-sm">{lang("yourMessage", props.lang)}</p>
+          <p>{lang("yourMessage", props.lang)}</p>
         </>
       )}
       {answer === "no" && <p>{lang("thatsAShame", props.lang)}</p>}

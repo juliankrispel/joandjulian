@@ -5,5 +5,6 @@ export interface Row {
   HASH: string;
   ANSWER: string;
   MESSAGE: string;
+  MUSIC: string;
   ATTENDANCE: string;
 }

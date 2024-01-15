@@ -43,6 +43,7 @@ export default async function Home({
         [Constants.DIETARY_REQUIREMENTS]: dietaryRequirements,
         [Constants.MESSAGE]: message,
         [Constants.ATTENDANCE]: formData.get("attendance"),
+        [Constants.MUSIC]: formData.get("music"),
       }),
     });
     return redirect(`/${params.lang}/${params.token}/info`);
@@ -72,7 +73,9 @@ export default async function Home({
           <p>{lang("withReception", params.lang)}</p>
           <p className="pb-6">{lang("rsvp", params.lang)}</p>
 
-          <InviteForm row={json} lang={params.lang} />
+          <div className="text-base">
+            <InviteForm row={json} lang={params.lang} />
+          </div>
           <div className="w-full align-center justify-center items-center flex max-md:pt-10 md:py-12 ">
             <Image
               src="/landscape1.png"

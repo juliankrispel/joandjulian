@@ -71,6 +71,10 @@ export default async function Info({
           </>
         )}
 
+        <h3 className="pt-4 text-3xl">{lang("musicHeading", params.lang)}</h3>
+        <p>{lang("musicInfo", params.lang)}</p>
+
+
         <h3 className="pt-4 text-3xl">{lang("parkingHeading", params.lang)}</h3>
         <p>{lang("parking", params.lang)}</p>
         <div className="flex items-center justify-center w-full">
