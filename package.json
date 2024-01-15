@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@faker-js/faker": "^8.3.1",
     "@formatjs/intl-localematcher": "^0.4.2",
     "@next/font": "14.0.0",
     "@prisma/client": "5.8.0",
     "@types/bcrypt": "^5.0.1",
+    "@types/faker": "^6.6.9",
     "@types/negotiator": "^0.6.2",
     "@types/node": "20.8.9",
     "@types/react": "18.2.33",
@@ -24,6 +26,7 @@
     "damegender": "^0.0.6",
     "eslint": "8.52.0",
     "eslint-config-next": "14.0.0",
+    "faker": "^6.6.6",
     "gender-detection-from-name": "^1.8.0",
     "gender-detection-ts": "^1.1.0",
     "gender-guess": "^1.0.4",

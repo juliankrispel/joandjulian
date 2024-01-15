@@ -67,25 +67,46 @@ const dict = {
     "en-GB": "If you would like to send us a message you can do so here.",
   },
   inviteMessageSingle: {
-    "en-GB": `we'd love to invite you to our wedding on the 15th of August 2024.
+    "en-GB": `we'd love to invite you to our wedding on the 15th of August 2024. 
 
-Please answer as soon as possible and by 1st March 2024 at the latest by using this link: joandjulian.com/`,
-    "de-AT": `wir würden dich gerne zu unserer Hochzeit einladen, am 15ten August 2024.
+Please use the link below to access your digital invitation and provide your response by the 1st of March at the latest:
+joandjulian.com/`,
 
-Bitte antworte bis spätestens 1ten März 2024, indem du auf diesen Link zugreift: joandjulian.com/`,
+    "de-AT": `wir würden euch gerne zu unserer Hochzeit am 15ten August 2024 einladen.
+
+Deine Einladung kann auf der folgenden Webseite abgerufen werden. Bitte melde dich bis spätestens 1sten März: joandjulian.com/`,
   },
   inviteMessagePlural: {
     "en-GB": `we'd love to invite you to our wedding on the 15th of August 2024. 
 
-Please answer as soon as possible and by 1st March 2024 at the latest by using this link: joandjulian.com/`,
-    "de-AT": `wir würden euch gerne zu unserer Hochzeit einladen, am 15ten August 2024.
+Please use the link below to access your digital invitation and provide your response by the 1st of March at the latest:
+joandjulian.com/`,
+    "de-AT": `wir würden euch gerne zu unserer Hochzeit am 15ten August 2024 einladen.
 
-Bitte antwortet bis spätestens 1ten März 2024, indem ihr auf diesen Link zugreift: joandjulian.com/`,
+Eure Einladung kann auf der folgenden Webseite abgerufen werden. Bitte meldet euch bis spätestens 1sten März: joandjulian.com/`,
   },
-  weAreTrying: {
+  pleaseRespondSingle: {
+    "en-GB": "Please respond as soon as possible and by 1st March.",
+    "de-AT": "Bitte schicke uns deine Rückmeldung bis spätestens Ersten März",
+  },
+  pleaseRespondPlural: {
+    "en-GB": "Please respond as soon as possible and by 1st March.",
+    "de-AT": "Bitte schickt uns eure Rückmeldung bis spätestens Ersten März",
+  },
+  weAreTryingSingle: {
     "en-GB":
-      "We are trying to do our bit for the planet so all invites and RSVPs will be digital. Please let us know if you have any difficulties in accessing or responding to your invite.",
-    "de-AT": `Wir versuchen unseren Teil für die Umwelt zu tun, deshalb werden alle Einladungen digital sein. Bitte lass uns wissen, falls du Probleme hast, auf deine Einladung zuzugreifen oder zu antworten.`,
+      "We are trying to do our bit for the planet so all invites and RSVPs are digital. Please let us know if you have any difficulties in accessing or responding to your invite.",
+    "de-AT": `Wir habens bewusst dazu entschieden digital anstatt Papiereinladungen auszusenden um die Umwelt du schonen. Bitte melde dich, falls du Probleme hast, auf deine Einladung zuzugreifen.`,
+  },
+  weAreTryingPlural: {
+    "en-GB":
+      "We are trying to do our bit for the planet so all invites and RSVPs are digital. Please let us know if you have any difficulties in accessing or responding to your invite.",
+    "de-AT": `Wir habens bewusst dazu entschieden digital anstatt Papiereinladungen auszusenden um die Umwelt du schonen. Bitte meldet euch, falls ihr Probleme habt, auf eure Einladung zuzugreifen.`,
+  },
+
+  withLove: {
+    "en-GB": "Lots of love, Joanna and Julian",
+    "de-AT": "Mit herzlichen Grüßen, Joanna und Julian",
   },
   thatsAShame: {
     "de-AT":
@@ -130,18 +151,17 @@ Bitte antwortet bis spätestens 1ten März 2024, indem ihr auf diesen Link zugre
   },
   ifYouAreDriving: {
     "en-GB": "If you are driving, the M6 is the closest motorway to Arkholme.",
-    "de-AT":
-      "Falls du mit dem Auto kommst, die M6 ist die nächste Autobahn zu Arkholme.",
+    "de-AT": "Für Autofahrer ist die M6 ist die näheste Autobahn zu Arkholme.",
   },
   ifYouComeFromAbroad: {
     "de-AT":
-      "Für jene die von weiter weg kommen, der nächste Flughafen ist Manchester Airport.",
+      "Für jene die von weiter weg kommen ist der Manchester Flughafen zu empfehlen.",
     "en-GB":
       "For those who are coming to us from abroad, the closest airport is Manchester Airport.",
   },
   ifYouComeByTrain: {
     "de-AT":
-      "Falls du mit dem Zug kommst, der nächste Bahnhof ist Lancaster, welcher auch Verbindungen zum Manchester Airport hat.",
+      "Für Zugfahrende ist der Lancaster Bahnof am nähesten, welcher auch Verbindungen zum Manchester Flughafen hat.",
     "en-GB":
       "If you are traveling by train, the closest train station is Lancaster, which also has connections to Manchester Airport.",
   },
@@ -151,12 +171,12 @@ Bitte antwortet bis spätestens 1ten März 2024, indem ihr auf diesen Link zugre
   },
   ceremonyWillBegin: {
     "de-AT":
-      "Die Busse werden zwischen 13:15 und 13:30 bei Williamson Park ankommen und Ashton Memoria wird ab 13:30 unseren Gästen zur Verfügung stehen. Die Zeremonie beginnt um 14 Uhr. Danach gibt es Getränke und ein paar Fotos.",
+      "Euer Transport wird zwischen 13:15 Uhr und 13:30 Uhr bei Williamson Park ankommen und Ashton Memorial wird ab 13:30 unseren Gästen zur Verfügung stehen. Die Zeremonie beginnt um 14 Uhr. Danach gibt es Getränke und ein bisschen Fotographie.",
     "en-GB": `The coaches will arive at Williamson Park between 1:15 and 1:30pm and Ashton Memorial will be available to our guests from 1:30pm. The ceremony will begin at 2pm and will be followed by drinks and photographs.`,
   },
   theCoachWillCollect: {
     "de-AT":
-      "Um 15:45 werden die Busse euch von Williamson Park abholen und zurück zu Arkholme Village Hall bringen, wo die Festlichkeiten um 16:30 beginnen.",
+      "Um 15:45 Uhr wird der Transport euch von Williamson Park abholen und zurück zu Arkholme Village Hall bringen, wo die Festlichkeiten um 16:30 Uhr beginnen.",
     "en-GB":
       "The coaches will collect guests from Williamson Park at 3:45pm to return you to Arkholme Village Hall for the reception at 4:30pm.",
   },
@@ -164,7 +184,7 @@ Bitte antwortet bis spätestens 1ten März 2024, indem ihr auf diesen Link zugre
     "en-GB":
       "There will be an open stage for live music where anyone is welcome to perform. If you would like to perform, please let us know approximately how much time you will need so we can plan accordingly.",
     "de-AT":
-      "Es wird eine offene Bühne für Live-Musik geben, wo jeder willkommen ist. Falls du etwas spielen willst, lass uns bitte wissen wie viel Zeit du ungefähr brauchst, damit wir das einplanen können.",
+      "Es wird eine offene Bühne für Live-Musik geben, wo jeder willkommen ist. Falls du etwas spielen willst, lass uns bitte wissen wie viel Zeit dein Spiel in Anspruch nimmt, damit wir das einplanen können.",
   },
   foodWillBeServed: {
     "de-AT":
@@ -193,7 +213,7 @@ Bitte antwortet bis spätestens 1ten März 2024, indem ihr auf diesen Link zugre
   },
   theClosestTown: {
     "de-AT":
-      "Die nächste Stadt zum Empfangsort ist Kirby Lonsdale und hat verschiedene Unterkunftsmöglichkeiten.",
+      "Die näheste Ortschaft zum Hochzeitslokal ist Kirby Lonsdale wo ihr ebenfalls Unterkunftsmöglichkeiten finden könntet.",
     "en-GB":
       "The closest town to the reception venue is Kirby Lonsdale which has various accomodation options.",
   },
@@ -247,7 +267,7 @@ Bitte antwortet bis spätestens 1ten März 2024, indem ihr auf diesen Link zugre
   },
   coachesWillLeaveAt: {
     "de-AT":
-      "Die Busse werden um 12:45 Uhr von der Arkholme Village Hall abfahren, um die Gäste zur Zeremonie bei Ashton Memorial, Williamson Park, Quernmore Road, Lancaster LA1 1UX zu bringen.",
+      "Der Gästetransport wird um 12:45 Uhr von der Arkholme Village Hall abfahren, um euch zur Zeremonie bei Ashton Memorial, Williamson Park, Quernmore Road, Lancaster LA1 1UX zu bringen.",
     "en-GB":
       "Coaches will be leaving from Arkholme Village Hall at 12:45 noon to take guests to the ceremony venue at Ashton Memorial, Williamson Park, Quernmore Road, Lancaster LA1 1UX.",
   },

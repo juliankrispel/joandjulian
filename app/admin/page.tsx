@@ -4,6 +4,7 @@ import { getSheet } from "../lib/getSheet";
 import { updateSheet } from "../lib/updateSheet";
 import { s3 } from "../lib/s3";
 import { s3GetSheet } from "../lib/s3GetSheet";
+import { Faker, en } from "@faker-js/faker";
 import { s3UpdateSheet } from "../lib/s3UpdateSheet";
 import { Greeting } from "../lib/Greeting";
 import { SmallGreeting } from "../lib/SmallGreeting";
@@ -21,6 +22,10 @@ export default async function Home() {
     "use server";
     await seedHashes();
   }
+  const f = new Faker({
+    locale: [en],
+  });
+  console.log({ random: f.lorem.words(1) });
 
   const sheet = await s3GetSheet();
 
@@ -37,13 +42,12 @@ export default async function Home() {
   async function s3ToSheets() {
     "use server";
     try {
-      const sheet = await s3GetSheet()
+      const sheet = await s3GetSheet();
       await updateSheet(sheet);
     } catch (e) {
       console.error(e);
     }
   }
-
 
   return (
     <div className="w-full">
@@ -76,7 +80,6 @@ export default async function Home() {
         {sheet.map((row) => (
           <SmallGreeting lang="en-GB" row={row} key={row.CODE} />
         ))}
-
       </div>
     </div>
   );

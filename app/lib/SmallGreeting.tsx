@@ -27,7 +27,7 @@ export const SmallGreeting = (props: {
       {props.row.CODE}
       <br />
       <br />
-      {lang("weAreTrying", props.lang)}
+      {lang("weAreTryingSingle", props.lang)} {lang("withLove", props.lang)}
     </div>
   ) : (
     <div className="border-b pb-8">
@@ -44,7 +44,10 @@ export const SmallGreeting = (props: {
       {props.row.CODE}
       <br />
       <br />
-      {lang("weAreTrying", props.lang)}
+      {lang("weAreTryingPlural", props.lang)}
+      <br />
+      <br />
+      {lang("withLove", props.lang)}
     </div>
   );
 };
