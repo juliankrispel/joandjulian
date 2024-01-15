@@ -5,6 +5,10 @@ export type Item = {
 };
 
 const dict = {
+  theWeddingOf: {
+    "en-GB": "The wedding of Ms Joanna Stuiver and Mr Julian Krispel",
+    "de-AT": "Joanna's und Julian's Hochzeit",
+  },
   home: {
     "en-GB": "Welcome to Joanna's and Julian's wedding website.",
     "de-AT": "Willkommen auf Joannas und Julians Hochzeitswebseite.",

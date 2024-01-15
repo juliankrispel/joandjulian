@@ -24,7 +24,7 @@ export default async function Info({
   return (
     <div>
       <ScrollTop />
-      <h1 className={`max-md:text-4xl md:text-6xl w-full block`}>
+      <h1 className={`max-md:text-4xl md:text-4xl w-full block`}>
         <Greeting lang={params.lang} names={names} />
       </h1>
 

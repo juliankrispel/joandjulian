@@ -61,7 +61,7 @@ export default async function Home({
       <ScrollTop />
       <form className={`w-full`} action={rsvp}>
         <h1
-          className={`max-md:text-4xl md:text-6xl w-full block leading-tight`}
+          className={`max-md:text-4xl md:text-4xl w-full block leading-tight`}
         >
           <Greeting lang={params.lang} names={json.NAMES.split(",")} />
         </h1>
