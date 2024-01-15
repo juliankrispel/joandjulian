@@ -18,6 +18,5 @@ export async function getSheetRow(token: string) {
   const row = rows.find((r) => {
     return r.get(Constants.HASH) === token;
   });
-  console.log(row?.toObject());
   return row;
 }

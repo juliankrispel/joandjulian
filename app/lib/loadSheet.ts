@@ -7,7 +7,6 @@ export const loadSheet = async (serviceAccountAuth: JWT) => {
     process.env.GOOGLE_SHEET_ID as string,
     serviceAccountAuth
   );
-
   await document.loadInfo(true);
   return document;
 };
