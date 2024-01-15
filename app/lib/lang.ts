@@ -63,18 +63,18 @@ const dict = {
     "en-GB": "If you would like to send us a message you can do so here.",
   },
   inviteMessageSingle: {
-    "en-GB": `We'd love to invite you to our wedding on the 15th of August 2024.
+    "en-GB": `we'd love to invite you to our wedding on the 15th of August 2024.
 
 Please answer as soon as possible and by 1st March 2024 at the latest by clicking on this link: joandjulian.com/`,
-    "de-AT": `Wir würden dich gerne zu unserer Hochzeit einladen, am 15ten August 2024.
+    "de-AT": `wir würden dich gerne zu unserer Hochzeit einladen, am 15ten August 2024.
 
 Bitte antworte bis spätestens 1ten März 2024, indem du auf diesen Link klickst: joandjulian.com/`,
   },
   inviteMessagePlural: {
-    "en-GB": `We'd love to invite you to our wedding on the 15th of August 2024. 
+    "en-GB": `we'd love to invite you to our wedding on the 15th of August 2024. 
 
 Please answer as soon as possible and by 1st March 2024 at the latest by clicking on this link: joandjulian.com/`,
-    "de-AT": `Wir würden euch gerne zu unserer Hochzeit einladen, am 15ten August 2024.
+    "de-AT": `wir würden euch gerne zu unserer Hochzeit einladen, am 15ten August 2024.
 
 Bitte antwortet bis spätestens 1ten März 2024, indem ihr auf diesen Link klickt: joandjulian.com/`,
   },
@@ -245,11 +245,11 @@ Bitte antwortet bis spätestens 1ten März 2024, indem ihr auf diesen Link klick
     "de-AT":
       "Die Busse werden um 12:45 Uhr von der Arkholme Village Hall abfahren, um die Gäste zur Zeremonie bei Ashton Memorial, Williamson Park, Quernmore Road, Lancaster LA1 1UX zu bringen.",
     "en-GB":
-      "Coaches will be leaving from Arkholme Village Hall at 12:45pm to take guests to the ceremony venue at Ashton Memorial, Williamson Park, Quernmore Road, Lancaster LA1 1UX.",
+      "Coaches will be leaving from Arkholme Village Hall at 12:45 noon to take guests to the ceremony venue at Ashton Memorial, Williamson Park, Quernmore Road, Lancaster LA1 1UX.",
   },
   at12Pm: {
     "de-AT": "um 12:30, am Donnerstag den 15ten August",
-    "en-GB": "at 12:30pm on Thursday 15th of August",
+    "en-GB": "at 12:30 noon on Thursday 15th of August",
   },
   theEvent: {
     "de-AT": "Die Veranstaltung",
