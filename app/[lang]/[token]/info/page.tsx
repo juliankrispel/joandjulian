@@ -3,6 +3,8 @@ import { Item, lang } from "../../../lib/lang";
 import { Row } from "../../../lib/types";
 import Image from "next/image";
 import { Greeting } from "../../../lib/Greeting";
+import { useEffect } from "react";
+import { ScrollTop } from "../../../lib/ScrollTop";
 
 export default async function Info({
   params,
@@ -21,6 +23,7 @@ export default async function Info({
 
   return (
     <div>
+      <ScrollTop />
       <h1 className={`max-md:text-4xl md:text-6xl w-full block`}>
         <Greeting lang={params.lang} names={names} />
       </h1>

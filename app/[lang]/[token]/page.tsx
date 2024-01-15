@@ -5,6 +5,7 @@ import { Row } from '../../lib/types';
 import { InviteForm } from '../../lib/InviteForm';
 import { Greeting } from '../../lib/Greeting';
 import { Constants } from '../../api/[token]/Constants';
+import { ScrollTop } from '../../lib/ScrollTop';
 
 export default async function Home({
   params,
@@ -57,6 +58,7 @@ export default async function Home({
 
   return (
     <>
+      <ScrollTop />
       <form className={`w-full`} action={rsvp}>
         <h1
           className={`max-md:text-4xl md:text-6xl w-full block leading-tight`}

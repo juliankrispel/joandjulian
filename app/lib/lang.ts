@@ -65,18 +65,18 @@ const dict = {
   inviteMessageSingle: {
     "en-GB": `we'd love to invite you to our wedding on the 15th of August 2024.
 
-Please answer as soon as possible and by 1st March 2024 at the latest by clicking on this link: joandjulian.com/`,
+Please answer as soon as possible and by 1st March 2024 at the latest by using this link: joandjulian.com/`,
     "de-AT": `wir würden dich gerne zu unserer Hochzeit einladen, am 15ten August 2024.
 
-Bitte antworte bis spätestens 1ten März 2024, indem du auf diesen Link klickst: joandjulian.com/`,
+Bitte antworte bis spätestens 1ten März 2024, indem du auf diesen Link zugreift: joandjulian.com/`,
   },
   inviteMessagePlural: {
     "en-GB": `we'd love to invite you to our wedding on the 15th of August 2024. 
 
-Please answer as soon as possible and by 1st March 2024 at the latest by clicking on this link: joandjulian.com/`,
+Please answer as soon as possible and by 1st March 2024 at the latest by using this link: joandjulian.com/`,
     "de-AT": `wir würden euch gerne zu unserer Hochzeit einladen, am 15ten August 2024.
 
-Bitte antwortet bis spätestens 1ten März 2024, indem ihr auf diesen Link klickt: joandjulian.com/`,
+Bitte antwortet bis spätestens 1ten März 2024, indem ihr auf diesen Link zugreift: joandjulian.com/`,
   },
   weAreTrying: {
     "en-GB":
@@ -147,8 +147,8 @@ Bitte antwortet bis spätestens 1ten März 2024, indem ihr auf diesen Link klick
   },
   ceremonyWillBegin: {
     "de-AT":
-      "Die Busse werden zwischen 1:15 und 1:30 bei Williamson Park ankommen und Ashton Memoria wird ab 1:30 unseren Gästen zur Verfügung stehen. Die Zeremonie beginnt um 14 Uhr. Danach gibt es Getränke und ein paar Fotos.",
-    "en-GB": `The coaches will arive at Williamson Park between 1:15 and 1:30 and Ashton Memorial will be available to our guests from 1:30. The ceremony will begin at 2pm and will be followed by drinks and photographs.`,
+      "Die Busse werden zwischen 13:15 und 13:30 bei Williamson Park ankommen und Ashton Memoria wird ab 13:30 unseren Gästen zur Verfügung stehen. Die Zeremonie beginnt um 14 Uhr. Danach gibt es Getränke und ein paar Fotos.",
+    "en-GB": `The coaches will arive at Williamson Park between 1:15 and 1:30pm and Ashton Memorial will be available to our guests from 1:30pm. The ceremony will begin at 2pm and will be followed by drinks and photographs.`,
   },
   theCoachWillCollect: {
     "de-AT":

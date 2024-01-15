@@ -64,19 +64,19 @@ export default async function Home() {
           </button>
         </form>
       </div>
-      <div className="flex flex-col space-y-6">
+      <div className="flex flex-col space-y-8">
         <h1>German</h1>
 
         {sheet.map((row) => (
-          <SmallGreeting
-            lang="de-AT"
-            names={row.NAMES.split(",")}
-            key={row.CODE}
-          />
+          <SmallGreeting lang="de-AT" row={row} key={row.CODE} />
         ))}
       </div>
       <div>
         <h1>English</h1>
+        {sheet.map((row) => (
+          <SmallGreeting lang="en-GB" row={row} key={row.CODE} />
+        ))}
+
       </div>
     </div>
   );
