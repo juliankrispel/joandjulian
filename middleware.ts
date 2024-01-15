@@ -22,7 +22,7 @@ export function middleware(request: NextRequest) {
     pathname !== "/" &&
     pathname !== "/en-GB" &&
     pathname !== "/de-AT" &&
-    !pathname.endsWith("seed") &&
+    !pathname.endsWith("admin") &&
     !pathnameHasLocale &&
     accept?.includes("text/html")
   ) {

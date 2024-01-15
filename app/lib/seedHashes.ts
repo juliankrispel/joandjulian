@@ -1,4 +1,5 @@
-import { sheetTitle, Constants } from "../api/[token]/route";
+import { sheetTitle } from "../api/[token]/route";
+import { Constants } from "../api/[token]/Constants";
 
 import { generateSlug } from "random-word-slugs";
 import { jwtClient } from "./jwtClient";
@@ -12,9 +13,9 @@ export async function seedHashes() {
     const sheet = doc.sheetsByTitle[sheetTitle];
     const rows = await sheet.getRows();
     for (const row of rows) {
-      const hash = row.get(Constants.HASH);
+      const hash = row.get(Constants.CODE);
       if (!hash) {
-        row.set(Constants.HASH, generateSlug());
+        row.set(Constants.CODE, generateSlug());
         row.save();
         console.log("updated hash");
       }

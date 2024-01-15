@@ -4,6 +4,7 @@ import { notFound, redirect } from "next/navigation";
 import { Row } from '../../lib/types';
 import { InviteForm } from '../../lib/InviteForm';
 import { Greeting } from './Greeting';
+import { Constants } from '../../api/[token]/Constants';
 
 export default async function Home({
   params,
@@ -33,20 +34,17 @@ export default async function Home({
     console.log("rsvp");
     const answer = formData.get("answer");
     const message = formData.get("message");
-    const plusOne = formData.get("plusOne");
-    const allergies = formData.get("allergies");
     const dietaryRequirements = formData.get("dietaryRequirements");
     await fetch(`${process.env.BASE_URL}/api/${params.token}`, {
       method: "POST",
       body: JSON.stringify({
-        answer,
-        message,
-        plusOne,
-        dietaryRequirements,
-        allergies,
+        [Constants.ALLERGIES]: formData.get("allergies"),
+        [Constants.ANSWER]: answer,
+        [Constants.DIETARY_REQUIREMENTS]: dietaryRequirements,
+        [Constants.MESSAGE]: message,
+        [Constants.ATTENDANCE]: formData.get("attendance"),
       }),
     });
-    console.log("hello");
     return redirect(`/${params.lang}/${params.token}/info`);
   };
 

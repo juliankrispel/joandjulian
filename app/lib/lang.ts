@@ -72,6 +72,12 @@ const dict = {
     "de-AT": "15ten August 2024",
     "en-GB": "15th of August 2024",
   },
+  attendance: {
+    "en-GB":
+      "If any of you are not able to attend, please enter their names here.",
+    "de-AT":
+      "Falls jemand von euch nicht teilnehmen kann, bitte gib hier ihre Namen ein.",
+  },
   timeAndLocation: {
     "de-AT":
       "um 14 Uhr, Ashton Memorial, Williamson Park, Quernmore Road, Lancaster.",
@@ -257,10 +263,15 @@ const dict = {
     "de-AT": "Begleitung",
     "en-GB": "Plus one",
   },
-  dietaryRequirements: {
+  dietaryRequirementsSingle: {
     "de-AT":
       "Falls du gewisse Ernährungsbedürfnisse hast, gib diese bitte hier ein.",
     "en-GB": "If you have any dietary requirements, please enter them here.",
+  },
+  dietaryRrequirementsPlural: {
+    "en-GB": "Please detail the dietary requirements of each person here.",
+    "de-AT":
+      "Falls ihr gewisse Ernährungsbedürfnisse habt, gebt diese bitte hier ein, pro Person.",
   },
   allergies: {
     "de-AT": "Falls du Allergien hast, gib diese bitte hier ein.",

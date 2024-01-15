@@ -8,6 +8,7 @@ export function InviteForm(props: {
   row: Row;
 }) {
   const [answer, setAnswer] = useState(props.row.ANSWER || '');
+  const isSingle = props.row.NAMES.split(",").length === 1;
   console.log({ props, answer });
   return (
     <fieldset className="space-y-4 py-8">
@@ -59,16 +60,29 @@ export function InviteForm(props: {
             <p className="md:text-2xl">{lang("wonderful", props.lang)}</p>
             <textarea
               name="dietaryRequirements"
-              placeholder={lang("dietaryRequirements", props.lang)}
+              placeholder={lang(
+                isSingle
+                  ? "dietaryRequirementsSingle"
+                  : "dietaryRrequirementsPlural",
+                props.lang
+              )}
               className="border border-slate-400 p-2 w-full"
               defaultValue={props.row.DIETARY_REQUIREMENTS}
             />
-            <textarea
+           <textarea
               className="border border-slate-400 p-2 w-full"
               name="allergies"
               placeholder={lang("allergies", props.lang)}
               defaultValue={props.row.ALLERGIES}
             />
+            {!isSingle && (
+              <textarea
+                className="border border-slate-400 p-2 w-full"
+                name="attendance"
+                placeholder={lang("attendance", props.lang)}
+                defaultValue={props.row.ATTENDANCE}
+              />
+            )}
           </div>
           <p className="text-sm">{lang("yourMessage", props.lang)}</p>
         </>

@@ -19,6 +19,7 @@
     "@types/react-dom": "18.2.14",
     "@types/sha256": "^0.2.1",
     "autoprefixer": "^10.4.16",
+    "aws-sdk": "^2.1536.0",
     "bcrypt": "^5.1.1",
     "damegender": "^0.0.6",
     "eslint": "8.52.0",

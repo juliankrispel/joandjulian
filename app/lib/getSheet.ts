@@ -1,9 +1,8 @@
 import { sheetTitle } from "../api/[token]/route";
-import { Constants } from "../api/[token]/Constants";
 import { jwtClient } from "./jwtClient";
 import { loadSheet } from "./loadSheet";
 
-export async function getSheetRow(token: string) {
+export async function getSheet() {
   const serviceAccountAuth = jwtClient();
   const doc = await loadSheet(serviceAccountAuth);
   const { sheetsByTitle } = doc;
@@ -16,8 +15,5 @@ export async function getSheetRow(token: string) {
   const sheet = sheetsByTitle[sheetKey];
   await sheet.loadHeaderRow();
   const rows = await sheet.getRows();
-  const row = rows.find((r) => {
-    return r.get(Constants.CODE) === token;
-  });
-  return row;
+  return rows.map((r) => r.toObject());
 }
