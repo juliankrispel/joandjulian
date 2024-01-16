@@ -146,6 +146,15 @@ Joanna and Julian`,
     "en-GB":
       "We're sorry to miss you. Of course we understand that not everyone can make it or travel so far. If you would like to change your answer you can do so until the 1st of March.",
   },
+  contactHeading: {
+    "de-AT": "Wie ihr uns erreichen könnt",
+    "en-GB": "How you can contact us",
+  },
+  contactUs: {
+    "en-GB": `Please feel free to contact us if there is anything you need help with. We are available via call, text or Whatsapp at the following numbers:`,
+    "de-AT": `Falls wir dir irgendwie helfen können, melde dich bitte. Wir sind erreichbar per Anruf, SMS oder Whatsapp unter folgenden Nummern:`,
+  },
+
   changeYourAnswer: {
     "de-AT": "Um deine Antwort zu ändern bitte ",
     "en-GB": "To change your answer please ",
