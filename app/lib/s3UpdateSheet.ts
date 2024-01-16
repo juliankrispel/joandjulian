@@ -1,7 +1,7 @@
 import { s3 } from "./s3";
 
 export async function s3UpdateSheet(sheet: any) {
-  console.log("s3UpdateSheet", sheet);
+  console.log(sheet);
   await s3
     .putObject({
       Bucket: process.env.AWS_BUCKET_NAME!,

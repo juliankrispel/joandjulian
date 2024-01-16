@@ -8,6 +8,5 @@ export async function s3GetSheet() {
       Key: process.env.AWS_FILE_NAME!,
     })
     .promise();
-  console.log({ o });
   return JSON.parse(o.Body!.toString()) as Row[];
 }

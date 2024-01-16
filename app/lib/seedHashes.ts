@@ -1,5 +1,5 @@
 import { sheetTitle } from "../api/[token]/route";
-import { Constants } from "../api/[token]/Constants";
+import { Constants } from "./Constants";
 
 import { generateSlug } from "random-word-slugs";
 import { jwtClient } from "./jwtClient";
@@ -8,9 +8,6 @@ import { loadSheet } from "./loadSheet";
 const f = new Faker({
   locale: [en],
 });
-
-
-// console.log({ random: f.color.human() });
 
 export async function seedHashes() {
   const serviceAccountAuth = jwtClient();

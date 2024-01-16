@@ -1,5 +1,5 @@
 import { sheetTitle } from "../api/[token]/route";
-import { Constants } from "../api/[token]/Constants";
+import { Constants } from "./Constants";
 import { jwtClient } from "./jwtClient";
 import { loadSheet } from "./loadSheet";
 

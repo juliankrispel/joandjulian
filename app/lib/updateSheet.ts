@@ -1,5 +1,5 @@
 import { sheetTitle } from "../api/[token]/route";
-import { Constants } from "../api/[token]/Constants";
+import { Constants } from "./Constants";
 import { jwtClient } from "./jwtClient";
 import { loadSheet } from "./loadSheet";
 import { Row } from "./types";
@@ -31,7 +31,6 @@ export async function updateSheet(rows: Row[]) {
           .forEach((key) => {
             if (sheetRow.get(key) !== row[key]) {
               changed = true;
-              console.log("set", key, row[key]);
               sheetRow.set(key, row[key]);
             }
           });

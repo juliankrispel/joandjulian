@@ -9,11 +9,6 @@ import { s3UpdateSheet } from "../lib/s3UpdateSheet";
 import { Greeting } from "../lib/Greeting";
 import { SmallGreeting } from "../lib/SmallGreeting";
 
-console.log({
-  id: process.env.AWS_ACCESS_KEY_ID,
-  secret: process.env.AWS_SECRET_ACCESS_KEY,
-});
-
 export default async function Home() {
   if (process.env.NODE_ENV !== "development") {
     redirect("/");
@@ -25,7 +20,6 @@ export default async function Home() {
   const f = new Faker({
     locale: [en],
   });
-  console.log({ random: f.lorem.words(1) });
 
   const sheet = await s3GetSheet();
 

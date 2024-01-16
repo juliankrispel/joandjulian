@@ -4,7 +4,7 @@ import { notFound, redirect } from "next/navigation";
 import { Row } from '../../lib/types';
 import { InviteForm } from '../../lib/InviteForm';
 import { Greeting } from '../../lib/Greeting';
-import { Constants } from '../../api/[token]/Constants';
+import { Constants } from '../../lib/Constants';
 import { ScrollTop } from '../../lib/ScrollTop';
 import { revalidateTag } from 'next/cache';
 
@@ -33,10 +33,11 @@ export default async function Home({
 
   const rsvp = async (formData: FormData) => {
     "use server";
-    console.log("rsvp");
     const answer = formData.get("answer");
     const message = formData.get("message");
     const dietaryRequirements = formData.get("dietaryRequirements");
+
+    console.log(`Post to token ${params.token}`);
     await fetch(`${process.env.BASE_URL}/api/${params.token}`, {
       method: "POST",
       body: JSON.stringify({
@@ -46,13 +47,17 @@ export default async function Home({
         [Constants.MESSAGE]: message,
         [Constants.ATTENDANCE]: formData.get("attendance"),
         [Constants.MUSIC]: formData.get("music"),
+        rnd: Math.random(),
       }),
     });
+    console.log("posted yo");
     revalidateTag("token");
     if (answer === 'yes') {
-      return redirect(`/${params.lang}/${params.token}/info`);
+      console.log("redirecting to token");
+      redirect(`/${params.lang}/${params.token}/info`);
     }  else {
-      return redirect(`/${params.lang}/${params.token}/thatsashame`);
+      console.log("redirecting to thatsashame");
+      redirect(`/${params.lang}/${params.token}/thatsashame`);
     }
   };
 

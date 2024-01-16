@@ -22,6 +22,7 @@ export default async function Info({
   }
 
   if (json.ANSWER !== "yes") {
+    console.log("redirecting back to token", json);
     redirect(`/${params.lang}/${params.token}`);
   }
 

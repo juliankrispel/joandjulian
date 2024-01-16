@@ -113,6 +113,7 @@ export function InviteForm(props: {
             defaultValue={props.row.MESSAGE}
             placeholder={lang("nachricht", props.lang)}
           ></textarea>
+
           <button className="bg-slate-800 text-white px-4 py-2 ">
             {lang("submitAnswer", props.lang)}
           </button>
