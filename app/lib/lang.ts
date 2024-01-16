@@ -33,7 +33,7 @@ const dict = {
     "en-GB": "Submit",
     "de-AT": "Absenden",
   },
- and: {
+  and: {
     "de-AT": "und",
     "en-GB": "and",
   },
@@ -105,8 +105,12 @@ Eure Einladung kann auf der folgenden Webseite abgerufen werden. Bitte meldet eu
   },
 
   withLove: {
-    "en-GB": "Lots of love, Joanna and Julian",
-    "de-AT": "Mit herzlichen Grüßen, Joanna und Julian",
+    "en-GB": `Lots of love,
+    
+Joanna and Julian`,
+    "de-AT": `Mit herzlichen Grüßen,
+    
+     Joanna und Julian`,
   },
   thatsAShame: {
     "de-AT":
@@ -142,7 +146,6 @@ Eure Einladung kann auf der folgenden Webseite abgerufen werden. Bitte meldet eu
     "en-GB": "With a reception to follow from 4:30pm at Arkholme Village Hall",
   },
   rsvp: {
-
     "de-AT": "Bitte bestätige deine Teilnahme bis zum Ersten März 2024.",
     "en-GB": "Please RSVP by the 1st of March 2024.",
   },
@@ -152,7 +155,7 @@ Eure Einladung kann auf der folgenden Webseite abgerufen werden. Bitte meldet eu
   },
   ifYouAreDriving: {
     "en-GB": "If you are driving, the M6 is the closest motorway to Arkholme.",
-    "de-AT": "Für Autofahrer ist die M6 ist die näheste Autobahn zu Arkholme.",
+    "de-AT": "Für Autofahrer ist die M6 die näheste Autobahn zu Arkholme.",
   },
   ifYouComeFromAbroad: {
     "de-AT":
@@ -172,7 +175,7 @@ Eure Einladung kann auf der folgenden Webseite abgerufen werden. Bitte meldet eu
   },
   ceremonyWillBegin: {
     "de-AT":
-      "Euer Transport wird zwischen 13:15 Uhr und 13:30 Uhr bei Williamson Park ankommen und Ashton Memorial wird ab 13:30 unseren Gästen zur Verfügung stehen. Die Zeremonie beginnt um 14 Uhr. Danach gibt es Getränke und ein bisschen Fotographie.",
+      "Euer Transport wird zwischen 13:15 Uhr und 13:30 Uhr bei Williamson Park ankommen. Ashton Memorial wird ab 13:30 Uhr unseren Gästen zur Verfügung stehen, wo die Zeremonie um um 14 Uhr beginnen wird. Anschließend gibt es Getränke und ein paar Fotos.",
     "en-GB": `The coaches will arive at Williamson Park between 1:15 and 1:30pm and Ashton Memorial will be available to our guests from 1:30pm. The ceremony will begin at 2pm and will be followed by drinks and photographs.`,
   },
   theCoachWillCollect: {
@@ -189,9 +192,9 @@ Eure Einladung kann auf der folgenden Webseite abgerufen werden. Bitte meldet eu
   },
   foodWillBeServed: {
     "de-AT":
-      "Um 17 Uhr wird das Essen serviert und musiziert wird ab 19:30 Uhr",
+      "Um 17 Uhr wird das Essen serviert und musiziert wird ab 19:30 Uhr.",
     "en-GB":
-      "Food will be served between 5 and 7pm and live music will start from 7:30pm",
+      "Food will be served between 5 and 7pm and live music will start from 7:30pm.",
   },
   parkingHeading: {
     "de-AT": "Parkmöglichkeiten",
@@ -220,7 +223,7 @@ Eure Einladung kann auf der folgenden Webseite abgerufen werden. Bitte meldet eu
   },
   otherPlacesYouCanStay: {
     "de-AT":
-      "Andere Orte in der Nähe sind Ingleton, Clapham, Austwick, Caton und Wray. Lancaster wäre eine weiter Übernachtungsmöglichkeit, wo es eine vielzahl an Hotels gibt.",
+      "Andere Orte in der Nähe sind Ingleton, Clapham, Austwick, Caton und Wray. Lancaster bietet weitere Übernachtungsmöglichkeiten, wo es eine vielzahl an Hotels gibt.",
     "en-GB":
       "Other places you can stay close to Bentham include Ingleton, Clapham, Austwick, Caton and Wray. You could also stay in Lancaster which has a range of Hotels including chain Hotels.",
   },
@@ -241,8 +244,8 @@ Eure Einladung kann auf der folgenden Webseite abgerufen werden. Bitte meldet eu
       "Hier sind ein paar lokale Taxiunternehmen falls ihr ein Taxi zu Arkholme Village Hall nehmen möchtet.",
   },
   forThoseWithCaravans: {
-    "de-AT": "Für jenige mit Wohnwägen",
-    "en-GB": "For those with caravans",
+    "de-AT": "für Gäste mit Wohnwägen",
+    "en-GB": "for those with caravans",
   },
   accomodationText: {
     "de-AT":
@@ -251,8 +254,8 @@ Eure Einladung kann auf der folgenden Webseite abgerufen werden. Bitte meldet eu
       "There are various options in the local area. We will be staying with family in High Bentham. High Bentham accomodation includes:",
   },
   receptionWillEnd: {
-    "de-AT": "Die Feier endet um 23 Uhr",
-    "en-GB": "The reception will end at 11pm",
+    "de-AT": "Die Feier endet um 23 Uhr.",
+    "en-GB": "The reception will end at 11pm.",
   },
   arrivingAtAshtonMemorial: {
     "de-AT": "Ankunft bei Ashton Memorial 13:30 Uhr",
@@ -324,7 +327,7 @@ Eure Einladung kann auf der folgenden Webseite abgerufen werden. Bitte meldet eu
 An e-piano, a drum-kit, a guitar and a bass-guitar will be available as well as a few microphones.`,
     "de-AT": `Es wird eine offene Bühne für Live-Musik oder Aufführungen anderer Art geben, wo jeder willkommen ist. Wir bitten darum das ihr uns im vorhinein bescheid sagt über die Länge eurer Aufführung damit wir das einplanen können.
 
-Ein E-Piano, ein Schlagzeug, eine Gitarre und ein Bass-Gitarre werden zur Verfügung stehen, sowie ein paar Mikrofone.`,
+Ein E-Piano, ein Schlagzeug, eine Gitarre und eine Bass-Gitarre stehen zur Verfügung, sowie ein paar Standmikrofone.`,
   },
   dietaryRequirementsSingle: {
     "de-AT":

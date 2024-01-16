@@ -4,6 +4,8 @@ import { Row } from "../../../lib/types";
 import Image from "next/image";
 import { Greeting } from "../../../lib/Greeting";
 import { ScrollTop } from "../../../lib/ScrollTop";
+import { Great_Vibes } from "@next/font/google";
+const gv = Great_Vibes({ weight: "400", subsets: ["latin"] });
 
 export default async function Info({
   params,
@@ -183,11 +185,16 @@ export default async function Info({
           </li>
           <li>
             Lawrence Taxi & Private Hire:{" "}
-            <a href="tel:07720205099">07720 205099</a>
+            <a className="underline" href="tel:07720205099">
+              07720 205099
+            </a>
           </li>
 
           <li>
-            Austwick Taxis: <a href="tel:01524251364">015242 51364</a>
+            Austwick Taxis:{" "}
+            <a className="underline" href="tel:01524251364">
+              015242 51364
+            </a>
           </li>
         </ul>
 
@@ -224,6 +231,10 @@ export default async function Info({
             </a>
           </p>
         </div>
+
+        <p className={`whitespace-break-spaces text-right text-4xl pt-10 ${gv.className}`}>
+          {lang("withLove", params.lang)}
+        </p>
       </div>
     </div>
   );
