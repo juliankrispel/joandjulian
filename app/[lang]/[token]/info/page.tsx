@@ -1,9 +1,8 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { Item, lang } from "../../../lib/lang";
 import { Row } from "../../../lib/types";
 import Image from "next/image";
 import { Greeting } from "../../../lib/Greeting";
-import { useEffect } from "react";
 import { ScrollTop } from "../../../lib/ScrollTop";
 
 export default async function Info({
@@ -11,11 +10,17 @@ export default async function Info({
 }: {
   params: { lang: keyof Item; token: string };
 }) {
-  const info = await fetch(`${process.env.BASE_URL}/api/${params.token}`);
+  const info = await fetch(`${process.env.BASE_URL}/api/${params.token}`, {
+    next: { tags: ["token"] },
+  });
   const json: null | Row = await info.json();
 
   if (!json) {
     return notFound();
+  }
+
+  if (json.ANSWER !== "yes") {
+    redirect(`/${params.lang}/${params.token}`);
   }
 
   const names = json.NAMES.split(",");

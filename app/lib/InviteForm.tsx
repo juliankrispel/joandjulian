@@ -11,7 +11,7 @@ export function InviteForm(props: {
   const isSingle = props.row.NAMES.split(",").length === 1;
   console.log({ props, answer });
   return (
-    <fieldset className="space-y-4 py-8">
+    <fieldset className="space-y-10 py-8">
       <h3 className="text-sm">{lang("answer", props.lang)}</h3>
       <div className="max-md:block md:flex md:space-x-8 md:text-2xl md:flex-row md:items-center max-md:space-y-4">
         <label

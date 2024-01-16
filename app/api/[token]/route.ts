@@ -31,7 +31,6 @@ const update = async (
   { params: { token } }: { params: { token: string } }
 ) => {
   try {
-    revalidateTag("token");
     const currentSheet = await s3GetSheet();
     const body = await req.json()
     const updatedSheet = currentSheet.map((r: any) =>

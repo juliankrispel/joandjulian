@@ -6,6 +6,7 @@ import { InviteForm } from '../../lib/InviteForm';
 import { Greeting } from '../../lib/Greeting';
 import { Constants } from '../../api/[token]/Constants';
 import { ScrollTop } from '../../lib/ScrollTop';
+import { revalidateTag } from 'next/cache';
 
 export default async function Home({
   params,
@@ -47,7 +48,10 @@ export default async function Home({
         [Constants.MUSIC]: formData.get("music"),
       }),
     });
-    return redirect(`/${params.lang}/${params.token}/info`);
+    revalidateTag("token");
+    if (answer === 'yes') {
+      return redirect(`/${params.lang}/${params.token}/info`);
+    }
   };
 
   const isSingle = json.NAMES.split(",").length === 1;

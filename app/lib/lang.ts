@@ -33,7 +33,7 @@ const dict = {
     "en-GB": "Submit",
     "de-AT": "Absenden",
   },
-  and: {
+ and: {
     "de-AT": "und",
     "en-GB": "and",
   },
@@ -53,13 +53,13 @@ const dict = {
   },
   invitePlural: {
     "de-AT":
-      "Wir würden uns freuen, euch bei unserer Hochzeit dabei zu haben. Sie findet statt um 14 Uhr am 15ten August 2024 bei Ashton Memorial, Williamson Park, Quernmore Road, Lancaster.",
-    "en-GB": `We would love to invite you to our wedding at 2pm on the 15th of August 2024 at Ashton Memorial, Williamson Park, Quernmore Road, Lancaster.`,
+      "Wir laden euch herzlich dazu ein bei unserer Hochzeit dabei zu sein. Sie findet am 15ten August 2024 statt, bei Ashton Memorial in Williamson Park, Lancaster, England.",
+    "en-GB": `We would love to invite you to our wedding on the 15th of August 2024 at Ashton Memorial, Williamson Park, Quernmore Road, Lancaster.`,
   },
   inviteSingular: {
     "de-AT":
-      "Wir würden uns freuen, dich zu unserer Hochzeit einzuladen. Sie findet statt um 14 Uhr am 15ten August 2024 bei Ashton Memorial, Williamson Park, Quernmore Road, Lancaster.",
-    "en-GB": `We would love to invite you to our wedding at 2pm on the 15th of August 2024 at Ashton Memorial, Williamson Park, Quernmore Road, Lancaster.`,
+      "Wir laden dich herzlich dazu ein bei unserer Hochzeit dabei zu sein. Sie findet am 15ten August 2024 statt, bei Ashton Memorial in Williamson Park, Lancaster, England.",
+    "en-GB": `We would love to invite you to our wedding on the 15th of August 2024 at Ashton Memorial, Williamson Park, Quernmore Road, Lancaster.`,
   },
   yourMessage: {
     "de-AT":
@@ -138,11 +138,12 @@ Eure Einladung kann auf der folgenden Webseite abgerufen werden. Bitte meldet eu
   },
   withReception: {
     "de-AT":
-      "Mit anschließendem Empfang um 16:30 Uhr bei Arkholme Village Hall",
+      "Mit anschließendem Empfang um 16:30 Uhr bei Arkholme Village Hall.",
     "en-GB": "With a reception to follow from 4:30pm at Arkholme Village Hall",
   },
   rsvp: {
-    "de-AT": "Bitte bestätige deine Teilnahme bis zum ersten März 2024.",
+
+    "de-AT": "Bitte bestätige deine Teilnahme bis zum Ersten März 2024.",
     "en-GB": "Please RSVP by the 1st of March 2024.",
   },
   gettingHere: {
