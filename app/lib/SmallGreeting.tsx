@@ -6,7 +6,7 @@ export const SmallGreeting = (props: {
   row: Row
   lang: "de-AT" | "en-GB";
 }) => {
-  let names = props.row.NAMES.split(",");
+  let names = props.row.NAMES.split(",").map((n) => n.trim());
   const isSingle = names.length === 1;
   names = names.map((name, index) => {
     if (props.lang === "de-AT" || index === 0) {
@@ -22,7 +22,7 @@ export const SmallGreeting = (props: {
   const lastName = names.pop();
 
   return isSingle ? (
-    <div className="border-b pb-8">
+    <div className="border-b pb-8 whitespace-break-spaces">
       {lastName}, {lang("inviteMessageSingle", props.lang)}
       {props.row.CODE}
       <br />
@@ -30,7 +30,7 @@ export const SmallGreeting = (props: {
       {lang("weAreTryingSingle", props.lang)} {lang("withLove", props.lang)}
     </div>
   ) : (
-    <div className="border-b pb-8">
+    <div className="border-b pb-8 whitespace-break-spaces">
       {names.map((name, index) => {
         return (
           <>

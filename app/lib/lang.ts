@@ -70,9 +70,10 @@ const dict = {
     "en-GB": `we'd love to invite you to our wedding on the 15th of August 2024. 
 
 Please use the link below to access your digital invitation and provide your response by the 1st of March at the latest:
+
 joandjulian.com/`,
 
-    "de-AT": `wir würden euch gerne zu unserer Hochzeit am 15ten August 2024 einladen.
+    "de-AT": `wir laden dich herzlich ein bei unserer Hochzeit am 15ten August 2024 dabei zu sein.
 
 Deine Einladung kann auf der folgenden Webseite abgerufen werden. Bitte melde dich bis spätestens 1sten März: joandjulian.com/`,
   },
@@ -80,8 +81,9 @@ Deine Einladung kann auf der folgenden Webseite abgerufen werden. Bitte melde di
     "en-GB": `we'd love to invite you to our wedding on the 15th of August 2024. 
 
 Please use the link below to access your digital invitation and provide your response by the 1st of March at the latest:
+
 joandjulian.com/`,
-    "de-AT": `wir würden euch gerne zu unserer Hochzeit am 15ten August 2024 einladen.
+    "de-AT": `wir laden euch herzlich ein bei unserer Hochzeit am 15ten August 2024 dabei zu sein.
 
 Eure Einladung kann auf der folgenden Webseite abgerufen werden. Bitte meldet euch bis spätestens 1sten März: joandjulian.com/`,
   },
