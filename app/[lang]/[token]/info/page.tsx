@@ -30,7 +30,7 @@ export default async function Info({
 
       <div className="pt-10 block space-y-6">
         <p>
-          {lang(isSingle ? "acceptedSingle" : "acceptedSingle", params.lang)}
+          {lang(isSingle ? "acceptedSingle" : "acceptedPlural", params.lang)}
         </p>
         <div className="flex items-center justify-center"></div>
 
