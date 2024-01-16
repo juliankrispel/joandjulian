@@ -12,7 +12,6 @@ export function getLocale(request: NextRequest) {
     },
   }).languages();
 
-  const acceptedLanguage = match(languages, locales, defaultLocale);
-  // console.log({ languages, locales, acceptLanguage: request.headers.get("accept-language")?.toString() });
-  return acceptedLanguage;
+  if (languages.some((l) => l.includes("de"))) return "de-AT";
+  return "en-GB";
 }

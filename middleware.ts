@@ -27,10 +27,10 @@ export function middleware(request: NextRequest) {
     accept?.includes("text/html")
   ) {
     const locale = getLocale(request);
+    console.log({ locale });
     const _u = request.url.toString();
     const p = `${locale}${pathname}`;
     const url = new URL(p, `${protocol}//${host}`);
-    console.log({ _u, p, url, host, basePath, hostname, locale, protocol });
     return Response.redirect(url);
   }
 }

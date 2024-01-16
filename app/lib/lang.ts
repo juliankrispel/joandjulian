@@ -98,12 +98,12 @@ Eure Einladung kann auf der folgenden Webseite abgerufen werden. Bitte meldet eu
   weAreTryingSingle: {
     "en-GB":
       "We are trying to do our bit for the planet so all invites and RSVPs are digital. Please let us know if you have any difficulties in accessing or responding to your invite.",
-    "de-AT": `Wir habens bewusst dazu entschieden digital anstatt Papiereinladungen auszusenden um die Umwelt du schonen. Bitte melde dich, falls du Probleme hast, auf deine Einladung zuzugreifen.`,
+    "de-AT": `Wir haben uns dazu entschieden digitale Einladungen auszusenden um die Umwelt du schonen. Bitte melde dich, falls du Probleme hast, auf deine Einladung zuzugreifen.`,
   },
   weAreTryingPlural: {
     "en-GB":
       "We are trying to do our bit for the planet so all invites and RSVPs are digital. Please let us know if you have any difficulties in accessing or responding to your invite.",
-    "de-AT": `Wir habens bewusst dazu entschieden digital anstatt Papiereinladungen auszusenden um die Umwelt du schonen. Bitte meldet euch, falls ihr Probleme habt, auf eure Einladung zuzugreifen.`,
+    "de-AT": `Wir haben uns dazu entschieden digitale Einladungen auszusenden um die Umwelt du schonen. Bitte meldet euch, falls ihr Probleme habt, auf eure Einladung zuzugreifen.`,
   },
 
   withLove: {
@@ -112,7 +112,7 @@ Eure Einladung kann auf der folgenden Webseite abgerufen werden. Bitte meldet eu
 Joanna and Julian`,
     "de-AT": `Mit herzlichen Grüßen,
     
-     Joanna und Julian`,
+Joanna und Julian`,
   },
   thatsAShame: {
     "de-AT":
