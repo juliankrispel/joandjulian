@@ -23,7 +23,7 @@ export const SmallGreeting = (props: {
 
   return isSingle ? (
     <div className="border-b pb-8">
-      {lastName} {lang("inviteMessageSingle", props.lang)}
+      {lastName}, {lang("inviteMessageSingle", props.lang)}
       {props.row.CODE}
       <br />
       <br />
@@ -39,7 +39,7 @@ export const SmallGreeting = (props: {
           </>
         );
       })}
-      {lang("and", props.lang)} {lastName}{" "}
+      {lang("and", props.lang)} {lastName},{" "}
       {lang("inviteMessagePlural", props.lang)}
       {props.row.CODE}
       <br />

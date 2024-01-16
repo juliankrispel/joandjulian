@@ -20,7 +20,7 @@ export default function RootLayout({
       <meta name="robots" content="noindex"></meta>
       <body className="h-full p-8 w-full">
         <div
-          className={`${bf.className} min-h-full font-medium text-slate-800 text-xl max-w-3xl leading-relaxed m-auto relative flex md:pt-20 pb-28 justify-center w-full flex-col items-center md:space-y-12 sm:space-y-8`}
+          className={`${bf.className} min-h-full font-medium text-slate-800 text-xl max-w-3xl leading-relaxed m-auto relative flex md:pt-20 pb-28 justify-center w-full flex-col items-center md:space-y-12 max-md:space-y-8`}
         >
           <div className="w-full">
             <Image
