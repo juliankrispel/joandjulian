@@ -17,7 +17,7 @@ const dict = {
     "en-GB":
       "If you don't have an invite and believe this is a mistake, please contact us and we will send you one.",
     "de-AT":
-      "Falls du keine Einladung erhalten hast und glaubst, dass das ein Fehler ist, kontaktiere uns bitte und wir schicken dir eine.",
+      "Falls du keinen Einladungslink erhalten ast, kontaktiere uns bitte und wir schicken dir einen.",
   },
   ifYouHaveAnInvite: {
     "en-GB":
@@ -318,10 +318,10 @@ Eure Einladung kann auf der folgenden Webseite abgerufen werden. Bitte meldet eu
     "en-GB": "Music",
   },
   musicInfo: {
-    "en-GB": `There will be an open stage for live music and we encourage anyone who wishes to play a few songs to do so! If you would like to perform, please let us know approximately how much time you will need so we can plan accordingly.
+    "en-GB": `There will be an open stage for live music or acts of any other kind and we encourage anyone who wishes to perform to do so! If you would like to perform, please let us know approximately how much time you will need so we can plan accordingly.
 
 An e-piano, a drum-kit, a guitar and a bass-guitar will be available as well as a few microphones.`,
-    "de-AT": `Es wird eine offene Bühne für Live-Musik geben, wo jeder willkommen ist. Falls du etwas spielen willst, lass uns bitte wissen wie viel Zeit du ungefähr brauchst, damit wir das einplanen können.
+    "de-AT": `Es wird eine offene Bühne für Live-Musik oder Aufführungen anderer Art geben, wo jeder willkommen ist. Wir bitten darum das ihr uns im vorhinein bescheid sagt über die Länge eurer Aufführung damit wir das einplanen können.
 
 Ein E-Piano, ein Schlagzeug, eine Gitarre und ein Bass-Gitarre werden zur Verfügung stehen, sowie ein paar Mikrofone.`,
   },
