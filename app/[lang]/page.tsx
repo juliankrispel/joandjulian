@@ -21,7 +21,6 @@ export default function Home({
   return (
     <div className="w-full space-y-4">
       <h2>{lang("home", params.lang)}</h2>
-      <p>{lang("ifYouDontHaveAnInvite", params.lang)}</p>
       <p>{lang("ifYouHaveAnInvite", params.lang)}</p>
       <form action={redirectToInvite} className="space-y-4">
         <input
@@ -34,6 +33,8 @@ export default function Home({
           {lang("submit", params.lang)}
         </button>
       </form>
+
+      <p>{lang("ifYouDontHaveAnInvite", params.lang)}</p>
     </div>
   );
 }
