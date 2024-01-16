@@ -232,7 +232,9 @@ export default async function Info({
           </p>
         </div>
 
-        <p className={`whitespace-break-spaces text-right text-4xl pt-10 ${gv.className}`}>
+        <p
+          className={`whitespace-break-spaces text-right text-4xl pt-10 ${gv.className}`}
+        >
           {lang("withLove", params.lang)}
         </p>
       </div>

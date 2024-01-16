@@ -140,13 +140,22 @@ Joanna and Julian`,
     "en-GB":
       "Unfortunately due to limited capacity at the ceremony venue we are not able to invite plus ones at the moment. This may change nearer to the event. Please get in touch if you would like to bring a plus one and we will get back to you after the 1st of March.",
   },
-  withReception: {
+  sorryToMissYou: {
     "de-AT":
-      "Mit anschließendem Empfang um 16:30 Uhr bei Arkholme Village Hall.",
-    "en-GB": "With a reception to follow from 4:30pm at Arkholme Village Hall",
+      "Es tut uns leid dass du nicht dabei sein kannst. Wir verstehen natürlich dass nicht jeder Zeit haben kann bzw. so eine weite Reise auf sich nehmen kann. Wir werden dich vermissen. Falls du deine Antwort ändern möchtest, kannst du das bis zum 1ten März tun.",
+    "en-GB":
+      "We're sorry to miss you. Of course we understand that not everyone can make it or travel so far. If you would like to change your answer you can do so until the 1st of March.",
+  },
+  changeYourAnswer: {
+    "de-AT": "Um deine Antwort zu ändern bitte ",
+    "en-GB": "To change your answer please ",
+  },
+  withReception: {
+    "de-AT": "Mit anschließendem Hochzeitsfest in Arkholme Village Hall.",
+    "en-GB": "With a reception to follow at Arkholme Village Hall",
   },
   rsvp: {
-    "de-AT": "Bitte bestätige deine Teilnahme bis zum Ersten März 2024.",
+    "de-AT": "Wir bitten um Antwort bis zum Ersten März 2024.",
     "en-GB": "Please RSVP by the 1st of March 2024.",
   },
   gettingHere: {

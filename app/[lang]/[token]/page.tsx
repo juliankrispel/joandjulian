@@ -51,6 +51,8 @@ export default async function Home({
     revalidateTag("token");
     if (answer === 'yes') {
       return redirect(`/${params.lang}/${params.token}/info`);
+    }  else {
+      return redirect(`/${params.lang}/${params.token}/thatsashame`);
     }
   };
 
