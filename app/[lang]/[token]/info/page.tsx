@@ -222,19 +222,20 @@ export default async function Info({
         <p className="whitespace-break-spaces">
           {lang("contactUs", params.lang)}
         </p>
-        <p>
-          <ul>
-            <li>
-              Joanna:{" "}
-              <a className="underline" href="tel:+447970258545">
-                +44 7970 258 545
-              </a>
-            </li>
-            <li>
-              Julian: <a className="underline" href="tel:+447988116178">+44 7988 116 178</a>
-            </li>
-          </ul>
-        </p>
+        <ul>
+          <li>
+            Joanna:{" "}
+            <a className="underline" href="tel:+447970258545">
+              +44 7970 258 545
+            </a>
+          </li>
+          <li>
+            Julian:{" "}
+            <a className="underline" href="tel:+447988116178">
+              +44 7988 116 178
+            </a>
+          </li>
+        </ul>
         <h3 className="pt-4 text-3xl">{lang("answer", params.lang)}</h3>
         <div className="space-y-4">
           <p>
