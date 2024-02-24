@@ -69,31 +69,31 @@ const dict = {
   inviteMessageSingle: {
     "en-GB": `we'd love to invite you to our wedding on the 15th of August 2024. 
 
-Please use the link below to access your digital invitation and provide your response by the 1st of March at the latest:
+Please use the link below to access your digital invitation and provide your response by the 16th of March at the latest:
 
 joandjulian.com/`,
 
     "de-AT": `wir laden dich herzlich ein bei unserer Hochzeit am 15ten August 2024 dabei zu sein.
 
-Deine Einladung kann auf der folgenden Webseite abgerufen werden. Bitte melde dich bis spätestens 1sten März: joandjulian.com/`,
+Deine Einladung kann auf der folgenden Webseite abgerufen werden. Bitte melde dich bis spätestens 16ten März: joandjulian.com/`,
   },
   inviteMessagePlural: {
     "en-GB": `we'd love to invite you to our wedding on the 15th of August 2024. 
 
-Please use the link below to access your digital invitation and provide your response by the 1st of March at the latest:
+Please use the link below to access your digital invitation and provide your response by the 16th of March at the latest:
 
 joandjulian.com/`,
     "de-AT": `wir laden euch herzlich ein bei unserer Hochzeit am 15ten August 2024 dabei zu sein.
 
-Eure Einladung kann auf der folgenden Webseite abgerufen werden. Bitte meldet euch bis spätestens 1sten März: joandjulian.com/`,
+Eure Einladung kann auf der folgenden Webseite abgerufen werden. Bitte meldet euch bis spätestens 16ten März: joandjulian.com/`,
   },
   pleaseRespondSingle: {
-    "en-GB": "Please respond as soon as possible and by 1st March.",
-    "de-AT": "Bitte schicke uns deine Rückmeldung bis spätestens Ersten März",
+    "en-GB": "Please respond as soon as possible and by 16th March.",
+    "de-AT": "Bitte schicke uns deine Rückmeldung bis spätestens 16ten März",
   },
   pleaseRespondPlural: {
-    "en-GB": "Please respond as soon as possible and by 1st March.",
-    "de-AT": "Bitte schickt uns eure Rückmeldung bis spätestens Ersten März",
+    "en-GB": "Please respond as soon as possible and by 16th March.",
+    "de-AT": "Bitte schickt uns eure Rückmeldung bis spätestens 16ten März",
   },
   weAreTryingSingle: {
     "en-GB":
@@ -138,15 +138,15 @@ Joanna und Julian`,
   },
   noPlusOne: {
     "de-AT":
-      "Wegen Platzmangel können wir momentan leider keine Begleitung einladen. Das könnte sich aber noch ändern wenn wir die Anzahl der Gäste wissen. Bitte melde dich bei uns falls du eine Begleitung mitbringen möchtest und wir werden uns nach dem 1ten März bei dir melden.",
+      "Wegen Platzmangel können wir momentan leider keine Begleitung einladen. Das könnte sich aber noch ändern wenn wir die Anzahl der Gäste wissen. Bitte melde dich bei uns falls du eine Begleitung mitbringen möchtest und wir werden uns nach dem 16ten März bei dir melden.",
     "en-GB":
-      "Unfortunately due to limited capacity at the ceremony venue we are not able to invite plus ones at the moment. This may change nearer to the event. Please get in touch if you would like to bring a plus one and we will get back to you after the 1st of March.",
+      "Unfortunately due to limited capacity at the ceremony venue we are not able to invite plus ones at the moment. This may change nearer to the event. Please get in touch if you would like to bring a plus one and we will get back to you after the 16th of March.",
   },
   sorryToMissYou: {
     "de-AT":
-      "Es tut uns leid dass du nicht dabei sein kannst. Wir verstehen natürlich dass nicht jeder Zeit haben kann bzw. so eine weite Reise auf sich nehmen kann. Wir werden dich vermissen. Falls du deine Antwort ändern möchtest, kannst du das bis zum 1ten März tun.",
+      "Es tut uns leid dass du nicht dabei sein kannst. Wir verstehen natürlich dass nicht jeder Zeit haben kann bzw. so eine weite Reise auf sich nehmen kann. Wir werden dich vermissen. Falls du deine Antwort ändern möchtest, kannst du das bis zum 16ten März tun.",
     "en-GB":
-      "We're sorry to miss you. Of course we understand that not everyone can make it or travel so far. If you would like to change your answer you can do so until the 1st of March.",
+      "We're sorry to miss you. Of course we understand that not everyone can make it or travel so far. If you would like to change your answer you can do so until the 16th of March.",
   },
   contactHeading: {
     "de-AT": "Wie ihr uns erreichen könnt",
@@ -166,8 +166,8 @@ Joanna und Julian`,
     "en-GB": "With a reception to follow at Arkholme Village Hall",
   },
   rsvp: {
-    "de-AT": "Wir bitten um Antwort bis zum Ersten März 2024.",
-    "en-GB": "Please RSVP by the 1st of March 2024.",
+    "de-AT": "Wir bitten um Antwort bis zum 16ten März 2024.",
+    "en-GB": "Please RSVP by the 16th of March 2024.",
   },
   gettingHere: {
     "de-AT": "Anreise",

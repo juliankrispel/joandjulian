@@ -24,20 +24,17 @@ export default async function Home() {
     .map((row) => row.NAMES.split(",").length)
     .reduce((a, b) => a + b, 0);
 
-  /**
-   * Added 1 to the totalYes and totalNo to account for George not coming
-   */
   const totalYes =
     sheet
       .filter((row) => row.ANSWER === "yes")
       .map((row) => row.NAMES.split(",").length)
-      .reduce((a, b) => a + b, 0) - 1;
+      .reduce((a, b) => a + b, 0);
 
   const totalNo =
     sheet
       .filter((row) => row.ANSWER === "no")
       .map((row) => row.NAMES.split(",").length)
-      .reduce((a, b) => a + b, 0) + 1;
+      .reduce((a, b) => a + b, 0);
 
   const totalMaybe = sheet
     .filter((row) => !row.ANSWER || row.ANSWER == null)
@@ -67,6 +64,9 @@ export default async function Home() {
   return (
     <div className="w-full">
       <div className="flex space-x-4 w-full justify-start pt-10 pb-40">
+        <span className="bg-teal-200 px-4 py-2 rounded">
+          Room at reception: 116
+        </span>
         <span className="bg-stone-200 px-4 py-2 rounded">
           Invited: {totalCount}
         </span>
@@ -75,6 +75,9 @@ export default async function Home() {
         </span>
         <span className="bg-red-200 px-4 py-2 rounded">
           Total No: {totalNo}
+        </span>
+        <span className="bg-green-200 px-4 py-2 rounded">
+          Spaces: {116 - (totalYes + totalMaybe)}
         </span>
         <span className="bg-yellow-200 px-4 py-2 rounded">
           Total Maybe: {totalMaybe}
