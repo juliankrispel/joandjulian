@@ -38,8 +38,16 @@ export default async function Home() {
 
   const totalMaybe = sheet
     .filter((row) => !row.ANSWER || row.ANSWER == null)
-    .map((row) => row.NAMES.split(",").length)
+    .map((row) => {
+      const l = row.NAMES.split(",").length
+      console.log({ names: row.NAMES, l });
+      return l
+    })
     .reduce((a, b) => a + b, 0);
+
+  const maybeNames = sheet
+    .filter((row) => !row.ANSWER || row.ANSWER == null)
+    .map((row) => row.NAMES);
 
   async function sheetsToS3() {
     "use server";
@@ -65,7 +73,7 @@ export default async function Home() {
     <div className="w-full">
       <div className="flex space-x-4 w-full justify-start pt-10 pb-40">
         <span className="bg-teal-200 px-4 py-2 rounded">
-          Room at reception: 116
+          Room at reception: 114
         </span>
         <span className="bg-stone-200 px-4 py-2 rounded">
           Invited: {totalCount}
@@ -77,11 +85,19 @@ export default async function Home() {
           Total No: {totalNo}
         </span>
         <span className="bg-green-200 px-4 py-2 rounded">
-          Spaces: {116 - (totalYes + totalMaybe)}
+          Spaces: {114 - (totalYes + totalMaybe)}
         </span>
         <span className="bg-yellow-200 px-4 py-2 rounded">
           Total Maybe: {totalMaybe}
         </span>
+      </div>
+
+      <div>
+        <ul>
+          {maybeNames.map((n) => (
+            <li key={n}>{n}</li>
+          ))}
+        </ul>
       </div>
 
       <div className="flex space-x-4 w-full justify-start">
